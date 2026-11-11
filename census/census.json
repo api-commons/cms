@@ -13,9 +13,8 @@
     ],
     "properties": {
      "id": "string",
-     "projectId": "string",
-     "description": "object",
-     "fields": "array"
+     "dataType": "string",
+     "dataFormat": "string"
     },
     "evidence": [
      "openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/contenttypes",
@@ -34,15 +33,11 @@
      "PUT item"
     ],
     "properties": {
-     "content_types": "array",
-     "count": "integer",
      "uid": "string",
-     "title": "string",
-     "schema": "array",
-     "options": "object",
-     "created_at": "string",
-     "updated_at": "string",
-     "description": "string"
+     "data_type": "string",
+     "display_name": "string",
+     "mandatory": "boolean",
+     "unique": "boolean"
     },
     "evidence": [
      "openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /content_types",
@@ -161,8 +156,10 @@
      "GET collection"
     ],
     "properties": {
-     "contentTypes": "array",
-     "totalCount": "integer"
+     "fieldName": "string",
+     "fieldType": "string",
+     "isRequired": "boolean",
+     "label": "string"
     },
     "evidence": [
      "openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#GET /content-types"
@@ -327,8 +324,6 @@
      "PUT item"
     ],
     "properties": {
-     "entries": "array",
-     "count": "integer",
      "uid": "string",
      "title": "string",
      "locale": "string",
@@ -368,11 +363,13 @@
      "count": "integer",
      "offset": "integer",
      "limit": "integer",
-     "id": "integer",
-     "pattern": "string",
-     "reason": "string",
-     "created": "string",
-     "modified": "string",
+     "uriBuilder": "object",
+     "rels": "array",
+     "rel": "string",
+     "type": "string",
+     "params": "object",
+     "title": "string",
+     "uri": "string",
      "code": "string",
      "name": "string",
      "entry_type": "string",
@@ -386,6 +383,7 @@
      "language": "string",
      "priority": "number",
      "isActive": "boolean",
+     "id": "string",
      "collectionId": "string",
      "createdAt": "string",
      "updatedAt": "string"
@@ -466,18 +464,18 @@
      "PUT collection"
     ],
     "properties": {
-     "entries": "array",
-     "totalCount": "integer",
-     "facets": "object",
+     "state": "integer",
+     "releaseId": "string",
+     "uiStatus": "string",
      "projectId": "string",
-     "state": "number",
-     "entry": "object",
      "created": "string",
      "modified": "string",
      "pattern": "boolean",
-     "releaseId": "string",
+     "entry": "object",
      "workflowId": "string",
      "workflowStageId": "string",
+     "workflowDefinition": "object",
+     "stubType": "string",
      "editionId": "string",
      "editionName": "string",
      "editionPriority": "integer",
@@ -736,8 +734,13 @@
      "imageUrl": "string",
      "parentPageId": "string",
      "contentUpdate": null,
-     "page": "object",
-     "metrics": "array"
+     "date": "string",
+     "views": "integer",
+     "sessions": "integer",
+     "users": "integer",
+     "averageSecondsViewed": "integer",
+     "medianSecondsViewed": "integer",
+     "tabs": "integer"
     },
     "evidence": [
      "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/docs/{docId}/pages",
@@ -1192,8 +1195,6 @@
      "PUT item"
     ],
     "properties": {
-     "pages": "array",
-     "pagination": "object",
      "id": "string",
      "siteId": "string",
      "title": "string",
@@ -1231,8 +1232,6 @@
      "PUT item"
     ],
     "properties": {
-     "pages": "array",
-     "pagination": "object",
      "id": "string",
      "siteId": "string",
      "title": "string",
@@ -1307,8 +1306,6 @@
      "POST collection"
     ],
     "properties": {
-     "posts": "array",
-     "total_pages": "integer",
      "id": "integer",
      "date": "string",
      "status": "string",
@@ -1678,23 +1675,21 @@
      "PUT item"
     ],
     "properties": {
-     "posts": "array",
-     "total": "integer",
-     "page": "integer",
-     "per_page": "integer",
-     "total_pages": "integer",
-     "deleted_ids": "array",
      "id": "string",
      "text": "string",
+     "url": "string",
      "state": "string",
      "type": "string",
      "account_id": "string",
-     "account": "object",
      "user": "object",
      "scheduled_at": "string",
+     "post_link": "string",
+     "has_media": "boolean",
+     "network": "string",
+     "deleted_ids": "array",
+     "account": "object",
      "created_at": "string",
      "updated_at": "string",
-     "post_link": "string",
      "media": "array",
      "link": "object",
      "labels": "array",
@@ -1886,8 +1881,6 @@
      "isWatermarked": "boolean",
      "isPublic": "boolean",
      "metaproperties": "object",
-     "totalCount": "integer",
-     "assets": "array",
      "accountId": "string",
      "requesterId": "string",
      "scanStatus": "string",
@@ -2028,8 +2021,6 @@
      "POST collection"
     ],
     "properties": {
-     "assets": "array",
-     "count": "integer",
      "uid": "string",
      "title": "string",
      "url": "string",
@@ -2260,18 +2251,21 @@
      "POST collection"
     ],
     "properties": {
-     "media": "array",
-     "total": "integer",
      "id": "string",
+     "type": "string",
+     "name": "string",
+     "caption": "string",
      "path": "string",
+     "thumbnails": "array",
+     "created_at": "string",
+     "updated_at": "string",
+     "favorite": "boolean",
+     "in_library": "boolean",
      "thumbnail": "string",
      "validity": "object",
      "width": "number",
      "height": "number",
-     "source": "string",
-     "type": "string",
-     "name": "string",
-     "caption": "string"
+     "source": "string"
     },
     "evidence": [
      "openapi/_original/publer-openapi.yml#GET /media",
@@ -2570,12 +2564,18 @@
      "PUT collection"
     ],
     "properties": {
-     "assets": "array",
-     "totalCount": "integer",
-     "facets": "object",
      "projectId": "string",
+     "created": "string",
+     "modified": "string",
      "releaseId": "string",
      "asset": "object",
+     "assignedLabels": "object",
+     "type": "string",
+     "_id": "string",
+     "_name": "string",
+     "fields": "object",
+     "_dataResources": "object",
+     "labels": "array",
      "assetId": "string"
     },
     "evidence": [
@@ -2596,25 +2596,23 @@
      "POST collection"
     ],
     "properties": {
-     "assets": "array",
-     "pagination": "object",
-     "uploadDetails": "object",
-     "contentType": "string",
      "id": "string",
+     "contentType": "string",
+     "size": "integer",
+     "siteId": "string",
+     "hostedUrl": "string",
+     "originalFileName": "string",
+     "displayName": "string",
+     "lastUpdated": "string",
+     "createdOn": "string",
+     "variants": "array",
+     "altText": "string",
+     "uploadDetails": "object",
      "parentFolder": "string",
      "uploadUrl": "string",
      "assetUrl": "string",
-     "hostedUrl": "string",
-     "originalFileName": "string",
-     "createdOn": "string",
-     "lastUpdated": "string",
      "fileName": "string",
      "fileHash": "string",
-     "size": "integer",
-     "siteId": "string",
-     "displayName": "string",
-     "variants": "array",
-     "altText": "string",
      "localeId": "string"
     },
     "evidence": [
@@ -2642,25 +2640,23 @@
      "POST collection"
     ],
     "properties": {
-     "assets": "array",
-     "pagination": "object",
-     "uploadDetails": "object",
-     "contentType": "string",
      "id": "string",
+     "contentType": "string",
+     "size": "integer",
+     "siteId": "string",
+     "hostedUrl": "string",
+     "originalFileName": "string",
+     "displayName": "string",
+     "lastUpdated": "string",
+     "createdOn": "string",
+     "variants": "array",
+     "altText": "string",
+     "uploadDetails": "object",
      "parentFolder": "string",
      "uploadUrl": "string",
      "assetUrl": "string",
-     "hostedUrl": "string",
-     "originalFileName": "string",
-     "createdOn": "string",
-     "lastUpdated": "string",
      "fileName": "string",
      "fileHash": "string",
-     "size": "integer",
-     "siteId": "string",
-     "displayName": "string",
-     "variants": "array",
-     "altText": "string",
      "localeId": "string"
     },
     "evidence": [
@@ -3336,7 +3332,6 @@
     "webflow-api-and-documentation-webflow"
    ],
    "snake_case": [
-    "automattic",
     "box",
     "bynder",
     "carbonfarm",
@@ -3357,7 +3352,8 @@
     "bynder",
     "confluence",
     "contentstack",
-    "orakl"
+    "orakl",
+    "uniform"
    ],
    "PascalCase": [
     "sitefinity-cms"

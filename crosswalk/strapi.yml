@@ -7,9 +7,9 @@ concepts:
     path_segment:
     - content-types
     properties:
-      fields: schema
       id: uid
-    core_coverage: 0.333
+      fields: schema
+    core_coverage: 0.667
     evidence:
     - openapi/_original/strapi-admin-panel-api-openapi.yml#GET /admin/content-type-builder/content-types
     - openapi/_original/strapi-admin-panel-api-openapi.yml#GET /admin/content-type-builder/content-types/{uid}

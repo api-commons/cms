@@ -9,7 +9,9 @@ concepts:
     properties:
       id: id
       name: name
-      created_at: createdAt
+      created_at:
+      - createdAt
+      - date
       updated_at: updatedAt
       parent_id:
       - parent

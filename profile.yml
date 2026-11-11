@@ -70,23 +70,6 @@ concepts:
       share: 0.167
       tier: long-tail
     properties:
-    - name: fields
-      tier: core
-      providers: 5
-      share: 0.833
-      type: array
-      spellings:
-      - fields
-      - schema
-      - properties
-      - field_definitions
-    - name: description
-      tier: core
-      providers: 4
-      share: 0.667
-      type: string
-      spellings:
-      - description
     - name: id
       tier: core
       providers: 4
@@ -96,34 +79,32 @@ concepts:
       - id
       - uid
       - contentTypeId
-    - name: created_at
-      tier: core
-      providers: 3
-      share: 0.5
-      type: string
-      spellings:
-      - created_at
-      - created
     - name: name
       tier: core
-      providers: 3
-      share: 0.5
+      providers: 4
+      share: 0.667
       type: string
       spellings:
       - name
-      - title
+      - display_name
       - displayName
-    - name: updated_at
+      - label
+    - name: fields
       tier: core
       providers: 3
       share: 0.5
-      type: string
+      type: object
       spellings:
-      - updated_at
-      - updated
-    long_tail_count: 35
+      - properties
+      - field_definitions
+      - schema
+      - fields
+    long_tail_count: 44
     long_tail_sample:
-    - project_id
+    - created_at
+    - data_type
+    - description
+    - updated_at
     - allow_ref_edit
     - allowed_content_types
     - api_id
@@ -135,17 +116,22 @@ concepts:
     - content_type_links
     - content_type_version_guid
     - core
+    - data_format
     - default_value
     - details
     - disabled
     - entry_name
     - expected_locales
+    - field_name
+    - field_type
     - icon
+    - is_required
     - latest
-    - options
+    - mandatory
     - permissions
     - plugin
     - preview_configurations
+    - project_id
     - ref_type
     - slug_settings
     - source
@@ -154,10 +140,7 @@ concepts:
     - thumbnail_field
     - thumbnail_guid
     - type
-    - updated_by
-    - use_team_permissions
-    - version_guid
-    - workflow_id
+    - unique
   entry:
     segments_seen:
       entries: 4
@@ -216,8 +199,8 @@ concepts:
       type: string
       spellings:
       - created_at
-      - created
       - createdAt
+      - created
       - createdOn
     - name: updated_at
       tier: core
@@ -226,8 +209,8 @@ concepts:
       type: string
       spellings:
       - updated_at
-      - modified
       - updatedAt
+      - modified
     - name: locale
       tier: core
       providers: 3
@@ -242,15 +225,16 @@ concepts:
       share: 0.5
       type: string
       spellings:
-      - name
       - title
-    long_tail_count: 49
+      - name
+    long_tail_count: 53
     long_tail_sample:
     - content_type_id
     - metadata
-    - pattern
     - project_id
     - published_at
+    - rels
+    - slug
     - status
     - version
     - cms_locale_id
@@ -264,7 +248,6 @@ concepts:
     - elements
     - end_date
     - entry_type
-    - facets
     - field_data
     - fields
     - group_id
@@ -278,14 +261,14 @@ concepts:
     - last_updated
     - limit
     - offset
+    - params
     - parent_id
+    - pattern
     - phrases
     - pinned
     - position
     - prices
     - priority
-    - publish
-    - reason
   page:
     segments_seen:
       pages: 14
@@ -343,6 +326,7 @@ concepts:
       - createdAt
       - created
       - createdOn
+      - date
       - created_at
     - name: slug
       tier: extended
@@ -453,7 +437,7 @@ concepts:
       type: string
       spellings:
       - templateId
-    long_tail_count: 136
+    long_tail_count: 140
     long_tail_sample:
     - archived
     - authors
@@ -467,6 +451,7 @@ concepts:
     - activation_type
     - after_page_id
     - allowed_for_page_type
+    - average_seconds_viewed
     - blog
     - branch_id
     - browser_link
@@ -494,7 +479,6 @@ concepts:
     - draft_status
     - edit_url
     - editor_version
-    - elements
   post:
     segments_seen:
       posts: 6
@@ -628,7 +612,7 @@ concepts:
       - author
       - owner_id
       - Author
-    long_tail_count: 98
+    long_tail_count: 100
     long_tail_sample:
     - authors
     - email
@@ -721,19 +705,21 @@ concepts:
       - id
       - assetId
       - uid
+      - _id
     - name: name
       tier: core
-      providers: 15
-      share: 0.789
+      providers: 16
+      share: 0.842
       type: string
       spellings:
       - name
       - title
+      - _name
       - displayName
     - name: created_at
       tier: core
-      providers: 12
-      share: 0.632
+      providers: 14
+      share: 0.737
       type: string
       spellings:
       - created_at
@@ -744,14 +730,14 @@ concepts:
       - createdOn
     - name: updated_at
       tier: core
-      providers: 10
-      share: 0.526
+      providers: 12
+      share: 0.632
       type: string
       spellings:
       - updated_at
+      - modified
       - lastModified
       - dateModified
-      - modified
       - modified_at
       - modifiedDate
       - updatedAt
@@ -787,8 +773,8 @@ concepts:
       - summary
     - name: type
       tier: extended
-      providers: 7
-      share: 0.368
+      providers: 8
+      share: 0.421
       type: string
       spellings:
       - type
@@ -847,7 +833,7 @@ concepts:
       - path
       - handle
       - slug
-    long_tail_count: 224
+    long_tail_count: 227
     long_tail_sample:
     - author_id
     - copyright
@@ -860,13 +846,15 @@ concepts:
     - checksum
     - content
     - duration
+    - fields
     - file_extension
     - height
     - keywords
+    - labels
     - metadata
-    - pagination
     - permissions
     - thumbnail_url
+    - thumbnails
     - version
     - views
     - width
@@ -881,11 +869,9 @@ concepts:
     - asset_name
     - asset_state
     - asset_url
+    - assigned_labels
     - audit
     - authors
     - automatic_tags
     - brand_id
     - bundle_id
-    - bundle_name
-    - capabilities
-    - cascade

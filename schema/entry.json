@@ -24,8 +24,8 @@
       "x-commons-providers": 5,
       "x-commons-spellings": [
         "created_at",
-        "created",
         "createdAt",
+        "created",
         "createdOn"
       ],
       "format": "date-time"
@@ -37,8 +37,8 @@
       "x-commons-providers": 4,
       "x-commons-spellings": [
         "updated_at",
-        "modified",
-        "updatedAt"
+        "updatedAt",
+        "modified"
       ],
       "format": "date-time"
     },
@@ -58,8 +58,8 @@
       "x-commons-share": 0.5,
       "x-commons-providers": 3,
       "x-commons-spellings": [
-        "name",
-        "title"
+        "title",
+        "name"
       ]
     }
   },

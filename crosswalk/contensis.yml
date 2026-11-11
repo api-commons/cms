@@ -7,10 +7,8 @@ concepts:
     path_segment:
     - contenttypes
     properties:
-      fields: fields
-      description: description
       id: id
-    core_coverage: 0.5
+    core_coverage: 0.333
     evidence:
     - openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/contenttypes
     - openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/contenttypes/{contentTypeId}

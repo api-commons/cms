@@ -6,8 +6,9 @@ concepts:
   content_type:
     path_segment:
     - content-types
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      name: label
+    core_coverage: 0.333
     evidence:
     - openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#GET /content-types
   asset:

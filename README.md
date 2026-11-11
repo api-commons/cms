@@ -10,6 +10,15 @@ generated. Every number below is a count of providers.
 ## What the market already agrees on
 
 <!-- commons:summary -->
+| Concept | Expose it | Readable schema | Core properties (share) | Collection named |
+| --- | ---: | ---: | --- | --- |
+| content_type | 6 | 6 | id 67%, name 67%, fields 50% | content-types 4, contenttypes 2, content_types 1 |
+| entry | 6 | 6 | id 100%, created_at 83%, updated_at 67%, locale 50%, name 50% | entries 4, items 2, stories 1 |
+| page | 16 | 14 | id 93%, name 93%, created_at 50% | pages 14, page 3 |
+| post | 12 | 11 | id 82%, name 73%, created_at 64%, status 64%, body 55%, tags 55%, updated_at 55% | posts 6, blogposts 2, post 2, article 1 |
+| asset | 21 | 19 | id 95%, name 84%, created_at 74%, updated_at 63% | assets 14, media 5, asset 4, uploads 2 |
+
+Cohort: 73 providers with harvested OpenAPI, 36 crosswalks. Of the providers exposing a content_type: 33% create, 100% list, 67% fetch, 17% update, 17% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The

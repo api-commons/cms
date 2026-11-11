@@ -38,6 +38,7 @@
         "createdAt",
         "created",
         "createdOn",
+        "date",
         "created_at"
       ],
       "format": "date-time"
