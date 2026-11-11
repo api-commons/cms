@@ -1,0 +1,51 @@
+provider: ghost-org
+apis_io: https://apis.io/providers/ghost-org/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - pages
+    properties:
+      id:
+      - id
+      - uuid
+      name: title
+      created_at: created_at
+      slug: slug
+      updated_at: updated_at
+      body: html
+      description: excerpt
+      published_at: published_at
+      seo_title: meta_title
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/ghost-org-admin-api-openapi.yml#DELETE /pages/{id}/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#GET /pages/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#GET /pages/{id}/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#POST /pages/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#PUT /pages/{id}/
+  post:
+    path_segment:
+    - posts
+    properties:
+      id:
+      - id
+      - uuid
+      name: title
+      created_at: created_at
+      status: status
+      body: html
+      tags: tags
+      updated_at: updated_at
+      excerpt:
+      - excerpt
+      - meta_description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/ghost-org-admin-api-openapi.yml#DELETE /posts/{id}/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#GET /posts/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#GET /posts/{id}/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#POST /posts/
+    - openapi/_original/ghost-org-admin-api-openapi.yml#PUT /posts/{id}/

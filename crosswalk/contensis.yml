@@ -1,0 +1,26 @@
+provider: contensis
+apis_io: https://apis.io/providers/contensis/
+context: cms
+generated: '2026-11-10'
+concepts:
+  content_type:
+    path_segment:
+    - contenttypes
+    properties:
+      fields: fields
+      description: description
+      id: id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/contenttypes
+    - openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/contenttypes/{contentTypeId}
+  entry:
+    path_segment:
+    - entries
+    properties:
+      id: id
+      locale: language
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/entries
+    - openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/entries/{entryId}

@@ -1,0 +1,3495 @@
+{
+ "cohort_size": 73,
+ "unreadable": [],
+ "concepts": {
+  "content_type": {
+   "contensis": {
+    "segments": [
+     "contenttypes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "projectId": "string",
+     "description": "object",
+     "fields": "array"
+    },
+    "evidence": [
+     "openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/contenttypes",
+     "openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/contenttypes/{contentTypeId}"
+    ]
+   },
+   "contentstack": {
+    "segments": [
+     "content_types"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "content_types": "array",
+     "count": "integer",
+     "uid": "string",
+     "title": "string",
+     "schema": "array",
+     "options": "object",
+     "created_at": "string",
+     "updated_at": "string",
+     "description": "string"
+    },
+    "evidence": [
+     "openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /content_types",
+     "openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /content_types/{content_type_uid}",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#DELETE /content_types/{content_type_uid}",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#GET /content_types",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#GET /content_types/{content_type_uid}",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#POST /content_types",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#PUT /content_types/{content_type_uid}"
+    ]
+   },
+   "newscred": {
+    "segments": [
+     "content-types"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "component": "boolean",
+     "content_type_guid": "string",
+     "created_at": "string",
+     "created_by": "string",
+     "description": "string",
+     "disabled": "boolean",
+     "links": "object",
+     "name": "string",
+     "source": "string",
+     "source_id": "string",
+     "source_metadata": "string",
+     "thumbnail_guid": "string",
+     "updated_at": "string",
+     "updated_by": "string",
+     "content_type_version_guid": "string",
+     "created": "boolean",
+     "details": "object",
+     "expected_locales": "array",
+     "field_definitions": "array",
+     "latest": "boolean",
+     "version_guid": "string",
+     "allow_ref_edit": "boolean",
+     "allowed_content_types": "array",
+     "content_type_links": "object",
+     "core": "object",
+     "default_value": "string",
+     "ref_type": "integer",
+     "updated": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/newscred-cmp-open-api-openapi.json#GET /structured-content/content-types",
+     "openapi/_original/newscred-cmp-open-api-openapi.json#GET /structured-content/content-types/{content_type_id}",
+     "openapi/_original/newscred-cmp-open-api-openapi.json#POST /structured-content/content-types",
+     "openapi/_original/newscred-cmp-open-api-openapi.json#POST /structured-content/content-types/{content_type_id}"
+    ]
+   },
+   "optimizely": {
+    "segments": [
+     "content-types",
+     "contenttypes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "name": "string",
+     "displayName": "string",
+     "description": "string",
+     "base": "string",
+     "properties": "object",
+     "component": "boolean",
+     "disabled": "boolean",
+     "source": "string",
+     "thumbnail_guid": "string",
+     "content_type_guid": "string",
+     "created_by": "string",
+     "updated_by": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "source_id": "string",
+     "source_metadata": "string",
+     "links": "object",
+     "created": "boolean",
+     "content_type_version_guid": "string",
+     "details": "object",
+     "field_definitions": "array",
+     "expected_locales": "array",
+     "latest": "boolean",
+     "version_guid": "string",
+     "core": "object",
+     "allowed_content_types": "array",
+     "ref_type": "integer",
+     "allow_ref_edit": "boolean",
+     "content_type_links": "object",
+     "default_value": "string",
+     "updated": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/optimizely-content-delivery-openapi.yml#GET /contenttypes",
+     "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#GET /structured-content/content-types",
+     "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#GET /structured-content/content-types/{content_type_id}",
+     "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#POST /structured-content/content-types",
+     "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#POST /structured-content/content-types/{content_type_id}"
+    ]
+   },
+   "salesforce-experience-cloud": {
+    "segments": [
+     "content-types"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "contentTypes": "array",
+     "totalCount": "integer"
+    },
+    "evidence": [
+     "openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#GET /content-types"
+    ]
+   },
+   "strapi": {
+    "segments": [
+     "content-types"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "uid": "string",
+     "plugin": "string",
+     "apiID": "string",
+     "schema": "object"
+    },
+    "evidence": [
+     "openapi/_original/strapi-admin-panel-api-openapi.yml#GET /admin/content-type-builder/content-types",
+     "openapi/_original/strapi-admin-panel-api-openapi.yml#GET /admin/content-type-builder/content-types/{uid}"
+    ]
+   },
+   "uniform": {
+    "segments": [
+     "content-types"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "entryName": "string",
+     "thumbnailField": "string",
+     "fields": "array",
+     "description": "string",
+     "icon": "string",
+     "created": "string",
+     "updated": "string",
+     "slugSettings": "object",
+     "type": "string",
+     "useTeamPermissions": "boolean",
+     "permissions": "array",
+     "workflowId": "string",
+     "previewConfigurations": "array",
+     "projectId": "string",
+     "contentType": "object",
+     "contentTypeId": "string"
+    },
+    "evidence": [
+     "openapi/_original/uniform-platform-api-openapi.json#DELETE /api/v1/content-types",
+     "openapi/_original/uniform-platform-api-openapi.json#GET /api/v1/content-types",
+     "openapi/_original/uniform-platform-api-openapi.json#PUT /api/v1/content-types"
+    ]
+   }
+  },
+  "entry": {
+   "bigtincan": {
+    "segments": [
+     "stories"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/bigtincan-hub-api-openapi.json#GET /v1.3/search/stories",
+     "openapi/_original/bigtincan-hub-api-swagger.json#GET /v1.3/search/stories"
+    ]
+   },
+   "box": {
+    "segments": [
+     "items"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "total_count": "integer",
+     "limit": "integer",
+     "offset": "integer",
+     "order": "array",
+     "description": "string",
+     "size": "integer",
+     "path_collection": null,
+     "created_at": "string",
+     "modified_at": "string",
+     "trashed_at": "string",
+     "purged_at": "string",
+     "content_created_at": "string",
+     "content_modified_at": "string",
+     "created_by": null,
+     "modified_by": null,
+     "owned_by": null,
+     "shared_link": null,
+     "parent": null,
+     "item_status": "string",
+     "version_number": "string",
+     "comment_count": "integer",
+     "permissions": null,
+     "tags": null,
+     "lock": null,
+     "extension": "string",
+     "is_package": "boolean",
+     "expiring_embed_link": null,
+     "watermark_info": null,
+     "is_accessible_via_shared_link": "boolean",
+     "allowed_invitee_roles": "array",
+     "is_externally_owned": "boolean",
+     "has_collaborations": "boolean",
+     "metadata": null,
+     "expires_at": "string",
+     "representations": null,
+     "classification": null,
+     "uploader_display_name": null,
+     "disposition_at": "string",
+     "shared_link_permission_options": "array",
+     "is_associated_with_app_item": "boolean",
+     "collections": "array",
+     "is_download_available": "boolean",
+     "download_url": "string",
+     "authenticated_download_url": "string",
+     "allowed_shared_link_access_levels": "array"
+    },
+    "evidence": [
+     "openapi/_original/box-openapi.json#GET /collections/{collection_id}/items"
+    ]
+   },
+   "contensis": {
+    "segments": [
+     "entries"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "contentTypeId": "string",
+     "projectId": "string",
+     "language": "string",
+     "version": "object"
+    },
+    "evidence": [
+     "openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/entries",
+     "openapi/_original/contensis-openapi.yml#GET /api/delivery/projects/{projectId}/entries/{entryId}"
+    ]
+   },
+   "contentstack": {
+    "segments": [
+     "entries"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "entries": "array",
+     "count": "integer",
+     "uid": "string",
+     "title": "string",
+     "locale": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "published_at": "string",
+     "_version": "integer",
+     "entry": "object"
+    },
+    "evidence": [
+     "openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /content_types/{content_type_uid}/entries",
+     "openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /content_types/{content_type_uid}/entries/{entry_uid}",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#DELETE /content_types/{content_type_uid}/entries/{entry_uid}",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#GET /content_types/{content_type_uid}/entries",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#GET /content_types/{content_type_uid}/entries/{entry_uid}",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#POST /content_types/{content_type_uid}/entries",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#PUT /content_types/{content_type_uid}/entries/{entry_uid}"
+    ]
+   },
+   "optimizely": {
+    "segments": [
+     "items",
+     "entries"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "elements": "array",
+     "links": "array",
+     "count": "integer",
+     "offset": "integer",
+     "limit": "integer",
+     "id": "integer",
+     "pattern": "string",
+     "reason": "string",
+     "created": "string",
+     "modified": "string",
+     "code": "string",
+     "name": "string",
+     "entry_type": "string",
+     "start_date": "string",
+     "end_date": "string",
+     "is_active": "boolean",
+     "properties": "object",
+     "prices": "array",
+     "phrases": "string",
+     "targetKey": "string",
+     "language": "string",
+     "priority": "number",
+     "isActive": "boolean",
+     "collectionId": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#DELETE /{clientId}/customblacklists/{customBlacklistId}/entries",
+     "openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#DELETE /{clientId}/customblacklists/{customBlacklistId}/entries/{customBlacklistEntryId}",
+     "openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#GET /{clientId}/customblacklists/{customBlacklistId}/entries",
+     "openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#GET /{clientId}/customblacklists/{customBlacklistId}/entries/{customBlacklistEntryId}",
+     "openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#POST /{clientId}/customblacklists/{customBlacklistId}/entries",
+     "openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#POST /{clientId}/customblacklists/{customBlacklistId}/entries/{customBlacklistEntryId}",
+     "openapi/_original/optimizely-commerce-service-openapi.yml#DELETE /commerce/entries/{entryCode}",
+     "openapi/_original/optimizely-commerce-service-openapi.yml#GET /commerce/entries/{entryCode}",
+     "openapi/_original/optimizely-commerce-service-openapi.yml#PUT /commerce/entries/{entryCode}",
+     "openapi/_original/optimizely-platform-optimizely-optimizely-graph-api-openapi.json#DELETE /api/pinned/collections/{collectionId}/items",
+     "openapi/_original/optimizely-platform-optimizely-optimizely-graph-api-openapi.json#DELETE /api/pinned/collections/{collectionId}/items/{id}",
+     "openapi/_original/optimizely-platform-optimizely-optimizely-graph-api-openapi.json#GET /api/pinned/collections/{collectionId}/items"
+    ]
+   },
+   "storyblok": {
+    "segments": [
+     "stories"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "stories": "array",
+     "cv": "integer",
+     "rels": "array",
+     "links": "array",
+     "story": "object",
+     "id": "integer",
+     "uuid": "string",
+     "name": "string",
+     "slug": "string",
+     "full_slug": "string",
+     "content": "object",
+     "is_folder": "boolean",
+     "is_startpage": "boolean",
+     "parent_id": "integer",
+     "group_id": "string",
+     "published": "boolean",
+     "published_at": "string",
+     "first_published_at": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "tag_list": "array",
+     "pinned": "boolean",
+     "position": "integer",
+     "meta_data": "object",
+     "default_root": "string",
+     "is_demo": "boolean",
+     "publish": "integer"
+    },
+    "evidence": [
+     "openapi/_original/storyblok-content-delivery-api-v2-openapi.yml#GET /stories",
+     "openapi/_original/storyblok-content-delivery-api-v2-openapi.yml#GET /stories/{id}",
+     "openapi/_original/storyblok-content-delivery-api-v2-openapi.yml#GET /stories/{slug}",
+     "openapi/_original/storyblok-management-api-openapi.yml#DELETE /spaces/{space_id}/stories/{story_id}",
+     "openapi/_original/storyblok-management-api-openapi.yml#GET /spaces/{space_id}/stories",
+     "openapi/_original/storyblok-management-api-openapi.yml#GET /spaces/{space_id}/stories/{story_id}",
+     "openapi/_original/storyblok-management-api-openapi.yml#POST /spaces/{space_id}/stories",
+     "openapi/_original/storyblok-management-api-openapi.yml#PUT /spaces/{space_id}/stories/{story_id}"
+    ]
+   },
+   "uniform": {
+    "segments": [
+     "entries"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "entries": "array",
+     "totalCount": "integer",
+     "facets": "object",
+     "projectId": "string",
+     "state": "number",
+     "entry": "object",
+     "created": "string",
+     "modified": "string",
+     "pattern": "boolean",
+     "releaseId": "string",
+     "workflowId": "string",
+     "workflowStageId": "string",
+     "editionId": "string",
+     "editionName": "string",
+     "editionPriority": "integer",
+     "entryId": "string"
+    },
+    "evidence": [
+     "openapi/_original/uniform-platform-api-openapi.json#DELETE /api/v1/entries",
+     "openapi/_original/uniform-platform-api-openapi.json#GET /api/v1/entries",
+     "openapi/_original/uniform-platform-api-openapi.json#PUT /api/v1/entries"
+    ]
+   },
+   "webflow": {
+    "segments": [
+     "items"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "cmsLocaleId": "string",
+     "lastPublished": "string",
+     "lastUpdated": "string",
+     "createdOn": "string",
+     "isArchived": "boolean",
+     "isDraft": "boolean",
+     "fieldData": "object",
+     "cmsLocaleIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/webflow-data-api-openapi.yml#DELETE /collections/{collection_id}/items",
+     "openapi/_original/webflow-data-api-openapi.yml#DELETE /collections/{collection_id}/items/{item_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#GET /collections/{collection_id}/items",
+     "openapi/_original/webflow-data-api-openapi.yml#GET /collections/{collection_id}/items/{item_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#PATCH /collections/{collection_id}/items",
+     "openapi/_original/webflow-data-api-openapi.yml#PATCH /collections/{collection_id}/items/{item_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#POST /collections/{collection_id}/items",
+     "openapi/_original/webflow-data-api-openapi.yml#POST /collections/{collection_id}/items/bulk",
+     "openapi/_original/webflow-items-openapi.yml#DELETE /collections/{collection_id}/items",
+     "openapi/_original/webflow-items-openapi.yml#DELETE /collections/{collection_id}/items/{item_id}",
+     "openapi/_original/webflow-items-openapi.yml#GET /collections/{collection_id}/items",
+     "openapi/_original/webflow-items-openapi.yml#GET /collections/{collection_id}/items/{item_id}"
+    ]
+   },
+   "webflow-api-and-documentation-webflow": {
+    "segments": [
+     "items"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "cmsLocaleId": "string",
+     "lastPublished": "string",
+     "lastUpdated": "string",
+     "createdOn": "string",
+     "isArchived": "boolean",
+     "isDraft": "boolean",
+     "fieldData": "object",
+     "cmsLocaleIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/webflow-data-api-openapi.yml#DELETE /collections/{collection_id}/items",
+     "openapi/_original/webflow-data-api-openapi.yml#DELETE /collections/{collection_id}/items/{item_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#GET /collections/{collection_id}/items",
+     "openapi/_original/webflow-data-api-openapi.yml#GET /collections/{collection_id}/items/{item_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#PATCH /collections/{collection_id}/items",
+     "openapi/_original/webflow-data-api-openapi.yml#PATCH /collections/{collection_id}/items/{item_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#POST /collections/{collection_id}/items",
+     "openapi/_original/webflow-data-api-openapi.yml#POST /collections/{collection_id}/items/bulk",
+     "openapi/_original/webflow-items-openapi.yml#DELETE /collections/{collection_id}/items",
+     "openapi/_original/webflow-items-openapi.yml#DELETE /collections/{collection_id}/items/{item_id}",
+     "openapi/_original/webflow-items-openapi.yml#GET /collections/{collection_id}/items",
+     "openapi/_original/webflow-items-openapi.yml#GET /collections/{collection_id}/items/{item_id}"
+    ]
+   }
+  },
+  "page": {
+   "acoustic": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "rev": "string",
+     "name": "string",
+     "contentId": "string",
+     "contentTypeId": "string",
+     "position": "string",
+     "description": "string",
+     "layoutId": "string",
+     "segment": "string",
+     "title": "string",
+     "parentId": "string",
+     "classification": "string",
+     "children": "array",
+     "hideFromNavigation": "boolean",
+     "lastModified": "string",
+     "lastModifierId": "string",
+     "created": "string",
+     "creatorId": "string",
+     "route": "string",
+     "contentStatus": "string",
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/acoustic-content-openapi-original.json#DELETE /authoring/v1/sites/{site-id}/pages/{page-id}",
+     "openapi/_original/acoustic-content-openapi-original.json#GET /authoring/v1/sites/pages/{page-id}",
+     "openapi/_original/acoustic-content-openapi-original.json#GET /authoring/v1/sites/{site-id}/pages",
+     "openapi/_original/acoustic-content-openapi-original.json#GET /authoring/v1/sites/{site-id}/pages/{page-id}",
+     "openapi/_original/acoustic-content-openapi-original.json#GET /delivery/v1/sites/{siteId}/pages/{pageId}",
+     "openapi/_original/acoustic-content-openapi-original.json#GET /mydelivery/v1/sites/{siteId}/pages/{pageId}",
+     "openapi/_original/acoustic-content-openapi-original.json#POST /authoring/v1/sites/{site-id}/pages",
+     "openapi/_original/acoustic-content-openapi-original.json#PUT /authoring/v1/sites/{site-id}/pages/{page-id}",
+     "openapi/_original/acoustic-content-swagger2-original.yaml#DELETE /authoring/v1/sites/{site-id}/pages/{page-id}",
+     "openapi/_original/acoustic-content-swagger2-original.yaml#GET /authoring/v1/sites/pages/{page-id}",
+     "openapi/_original/acoustic-content-swagger2-original.yaml#GET /authoring/v1/sites/{site-id}/pages",
+     "openapi/_original/acoustic-content-swagger2-original.yaml#GET /authoring/v1/sites/{site-id}/pages/{page-id}"
+    ]
+   },
+   "atlassian-confluence": {
+    "segments": [
+     "pages",
+     "page"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "templateId": "string",
+     "originalTemplate": "object",
+     "referencingBlueprint": "string",
+     "name": "string",
+     "description": "string",
+     "space": "object",
+     "labels": "array",
+     "templateType": "string",
+     "editorVersion": "string",
+     "body": "object",
+     "_expandable": "object",
+     "_links": "object",
+     "id": "string",
+     "status": "string",
+     "title": "string",
+     "spaceId": "string",
+     "parentId": "string",
+     "parentType": "string",
+     "position": "integer",
+     "authorId": "string",
+     "ownerId": "string",
+     "lastOwnerId": "string",
+     "subtype": "string",
+     "createdAt": "string",
+     "version": "object",
+     "properties": "object",
+     "operations": "object",
+     "likes": "object",
+     "versions": "object",
+     "isFavoritedByCurrentUser": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/atlassian-confluence-rest-v1-openapi.json#GET /wiki/rest/api/template/page",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#DELETE /pages/{id}",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /labels/{id}/pages",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /pages",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /pages/{id}",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /spaces/{id}/pages",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#POST /pages",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#PUT /pages/{id}"
+    ]
+   },
+   "ceros": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "pageId": "string",
+     "slug": "string",
+     "label": "string",
+     "title": "string",
+     "afterPageId": "string",
+     "currentPageId": "string",
+     "width": "string",
+     "height": "string",
+     "minHeight": "string",
+     "sourceBreakpoints": "array",
+     "templateId": "string"
+    },
+    "evidence": [
+     "openapi/_original/ceros-public-api-2026-02-25-openapi.yml#DELETE /experiences/{experienceResourceId}/pages/{pageId}",
+     "openapi/_original/ceros-public-api-2026-02-25-openapi.yml#GET /experiences/{experienceResourceId}/pages",
+     "openapi/_original/ceros-public-api-2026-02-25-openapi.yml#POST /experiences/{experienceResourceId}/pages"
+    ]
+   },
+   "coda-project": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "href": "string",
+     "browserLink": "string",
+     "name": "string",
+     "subtitle": "string",
+     "parent": "object",
+     "pageContent": "object",
+     "icon": "object",
+     "image": "object",
+     "contentType": "string",
+     "isHidden": "boolean",
+     "isEffectivelyHidden": "boolean",
+     "children": "array",
+     "authors": "array",
+     "createdAt": "string",
+     "createdBy": null,
+     "updatedAt": "string",
+     "updatedBy": null,
+     "iconName": "string",
+     "imageUrl": "string",
+     "parentPageId": "string",
+     "contentUpdate": null,
+     "page": "object",
+     "metrics": "array"
+    },
+    "evidence": [
+     "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/docs/{docId}/pages",
+     "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/docs/{docId}/pages/{pageId}",
+     "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/workspaces/{workspaceId}/docs/{docId}/pages",
+     "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/workspaces/{workspaceId}/docs/{docId}/pages/{pageId}",
+     "openapi/_original/coda-project-openapi-original.json#DELETE /docs/{docId}/pages/{pageIdOrName}",
+     "openapi/_original/coda-project-openapi-original.json#GET /analytics/docs/{docId}/pages",
+     "openapi/_original/coda-project-openapi-original.json#GET /docs/{docId}/pages",
+     "openapi/_original/coda-project-openapi-original.json#GET /docs/{docId}/pages/{pageIdOrName}",
+     "openapi/_original/coda-project-openapi-original.json#POST /docs/{docId}/pages",
+     "openapi/_original/coda-project-openapi-original.json#PUT /docs/{docId}/pages/{pageIdOrName}"
+    ]
+   },
+   "confluence": {
+    "segments": [
+     "pages",
+     "page"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "status": "string",
+     "title": "string",
+     "spaceId": "string",
+     "parentId": "string",
+     "parentType": "string",
+     "position": "integer",
+     "authorId": "string",
+     "ownerId": "string",
+     "lastOwnerId": "string",
+     "createdAt": "string",
+     "version": "object",
+     "body": "object",
+     "labels": "object",
+     "properties": "object",
+     "operations": "object",
+     "likes": "object",
+     "versions": "object",
+     "_links": "object",
+     "templateId": "string",
+     "originalTemplate": "object",
+     "referencingBlueprint": "string",
+     "name": "string",
+     "description": "string",
+     "space": "object",
+     "templateType": "string",
+     "editorVersion": "string",
+     "_expandable": "object",
+     "subtype": "string",
+     "isFavoritedByCurrentUser": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/confluence-cloud-v2.yml#DELETE /pages/{id}",
+     "openapi/_original/confluence-cloud-v2.yml#GET /pages",
+     "openapi/_original/confluence-cloud-v2.yml#GET /pages/{id}",
+     "openapi/_original/confluence-cloud-v2.yml#GET /spaces/{id}/pages",
+     "openapi/_original/confluence-cloud-v2.yml#POST /pages",
+     "openapi/_original/confluence-cloud-v2.yml#PUT /pages/{id}",
+     "openapi/_original/confluence-rest-v1-openapi.json#GET /wiki/rest/api/template/page",
+     "openapi/_original/confluence-rest-v2-openapi.json#DELETE /pages/{id}",
+     "openapi/_original/confluence-rest-v2-openapi.json#GET /labels/{id}/pages",
+     "openapi/_original/confluence-rest-v2-openapi.json#GET /pages",
+     "openapi/_original/confluence-rest-v2-openapi.json#GET /pages/{id}",
+     "openapi/_original/confluence-rest-v2-openapi.json#GET /spaces/{id}/pages"
+    ]
+   },
+   "django-cms": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "slot": "string",
+     "label": "string",
+     "language": "string",
+     "content": "array",
+     "details": "string",
+     "html": "string"
+    },
+    "evidence": [
+     "openapi/_original/djangocms-rest-openapi.yml#GET /{language}/pages/",
+     "openapi/_original/djangocms-rest-openapi.yml#GET /{language}/pages/{path}/"
+    ]
+   },
+   "dotcms": {
+    "segments": [
+     "page"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/dotcms-rest-api-openapi.json#GET /api/v1/contenttype/page"
+    ]
+   },
+   "drupal": {
+    "segments": [
+     "page"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "links": "object"
+    },
+    "evidence": [
+     "openapi/_original/drupal-jsonapi-openapi.yml#GET /node/page",
+     "openapi/_original/drupal-jsonapi-openapi.yml#GET /node/page/{uuid}"
+    ]
+   },
+   "duda": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "uuid": "string",
+     "title": "string",
+     "path": "string",
+     "type": "string",
+     "draft_status": "string",
+     "header_html": "string",
+     "seo": "object",
+     "page": "object",
+     "collection": "object"
+    },
+    "evidence": [
+     "openapi/_original/duda-partner-api.json#GET /sites/multiscreen/{site_name}/pages",
+     "openapi/_original/duda-partner-api.json#POST /sites/multiscreen/{site_name}/pages"
+    ]
+   },
+   "ghost-org": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "uuid": "string",
+     "title": "string",
+     "slug": "string",
+     "lexical": "string",
+     "html": "string",
+     "plaintext": "string",
+     "comment_id": "string",
+     "feature_image": "string",
+     "feature_image_alt": "string",
+     "feature_image_caption": "string",
+     "featured": "boolean",
+     "status": "string",
+     "visibility": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "published_at": "string",
+     "custom_excerpt": "string",
+     "codeinjection_head": "string",
+     "codeinjection_foot": "string",
+     "custom_template": "string",
+     "canonical_url": "string",
+     "url": "string",
+     "excerpt": "string",
+     "reading_time": "integer",
+     "email_subject": "string",
+     "frontmatter": "string",
+     "og_image": "string",
+     "og_title": "string",
+     "og_description": "string",
+     "twitter_image": "string",
+     "twitter_title": "string",
+     "twitter_description": "string",
+     "meta_title": "string",
+     "meta_description": "string",
+     "tags": "array",
+     "authors": "array",
+     "primary_author": "object",
+     "primary_tag": "object",
+     "email": "object",
+     "access": "boolean",
+     "pages": "array"
+    },
+    "evidence": [
+     "openapi/_original/ghost-org-admin-api-openapi.yml#DELETE /pages/{id}/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#GET /pages/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#GET /pages/{id}/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#POST /pages/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#PUT /pages/{id}/",
+     "openapi/_original/ghost-org-content-api-openapi.yml#GET /pages/",
+     "openapi/_original/ghost-org-content-api-openapi.yml#GET /pages/{id}/",
+     "openapi/_original/ghost-org-openapi.yml#DELETE /admin/pages/{id}/",
+     "openapi/_original/ghost-org-openapi.yml#GET /admin/pages/",
+     "openapi/_original/ghost-org-openapi.yml#GET /admin/pages/{id}/",
+     "openapi/_original/ghost-org-openapi.yml#GET /content/pages/",
+     "openapi/_original/ghost-org-openapi.yml#GET /content/pages/{id}/"
+    ]
+   },
+   "google-blogger": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "kind": "string",
+     "id": "string",
+     "blog": "object",
+     "published": "string",
+     "updated": "string",
+     "url": "string",
+     "selfLink": "string",
+     "title": "string",
+     "content": "string",
+     "author": "object",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/blogger.yml#GET /blogs/{blogId}/pages",
+     "openapi/_original/blogger.yml#POST /blogs/{blogId}/pages"
+    ]
+   },
+   "makeswift": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "object": "string",
+     "id": "string",
+     "pathname": "string",
+     "canonicalUrl": [
+      "string",
+      "null"
+     ],
+     "title": [
+      "string",
+      "null"
+     ],
+     "description": [
+      "string",
+      "null"
+     ],
+     "socialImageUrl": [
+      "string",
+      "null"
+     ],
+     "sitemapPriority": [
+      "number",
+      "null"
+     ],
+     "sitemapFrequency": null,
+     "createdAt": [
+      "string",
+      "null"
+     ],
+     "updatedAt": [
+      "string",
+      "null"
+     ],
+     "publishedAt": [
+      "string",
+      "null"
+     ],
+     "isOnline": "boolean",
+     "excludedFromSearchEngines": [
+      "boolean",
+      "null"
+     ],
+     "locale": "string",
+     "localizations": "array",
+     "elements": null,
+     "siteId": "string",
+     "name": "string"
+    },
+    "evidence": [
+     "openapi/_original/makeswift-openapi.json#DELETE /v6/pages/{pageIdOrPathname}",
+     "openapi/_original/makeswift-openapi.json#GET /v6/pages",
+     "openapi/_original/makeswift-openapi.json#GET /v6/pages/{pageIdOrPathname}",
+     "openapi/_original/makeswift-openapi.json#PATCH /v6/pages/{pageIdOrPathname}",
+     "openapi/_original/makeswift-openapi.json#POST /v6/pages"
+    ]
+   },
+   "optimizely": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "nodeId": "string",
+     "ruleManagerId": "string",
+     "isDefaultVariant": "boolean",
+     "variantName": "string",
+     "isShared": "boolean",
+     "layoutPageId": "string",
+     "allowedForPageType": "string",
+     "templateHash": "string",
+     "createdOn": "string",
+     "createdBy": "string",
+     "modifiedOn": "string",
+     "modifiedBy": "string",
+     "project_id": "integer",
+     "name": "string",
+     "edit_url": "string",
+     "conditions": "string",
+     "activation_type": "string",
+     "created": "string",
+     "last_modified": "string",
+     "activation_code": "string",
+     "archived": "boolean",
+     "category": "string",
+     "key": "string",
+     "page_type": "string",
+     "single_use": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/optimizely-configured-commerce-admin-api-v1-openapi.json#GET /api/v1/admin/Pages",
+     "openapi/_original/optimizely-configured-commerce-admin-api-v1-openapi.json#POST /api/v1/admin/Pages",
+     "openapi/_original/optimizely-web-experimentation-openapi.yml#DELETE /pages/{page_id}",
+     "openapi/_original/optimizely-web-experimentation-openapi.yml#GET /pages",
+     "openapi/_original/optimizely-web-experimentation-openapi.yml#GET /pages/{page_id}",
+     "openapi/_original/optimizely-web-experimentation-openapi.yml#PATCH /pages/{page_id}",
+     "openapi/_original/optimizely-web-experimentation-openapi.yml#POST /pages",
+     "openapi/_original/optimizely-web-experimentation-optimizely-api-openapi.json#DELETE /pages/{page_id}",
+     "openapi/_original/optimizely-web-experimentation-optimizely-api-openapi.json#GET /pages",
+     "openapi/_original/optimizely-web-experimentation-optimizely-api-openapi.json#GET /pages/{page_id}",
+     "openapi/_original/optimizely-web-experimentation-optimizely-api-openapi.json#PATCH /pages/{page_id}",
+     "openapi/_original/optimizely-web-experimentation-optimizely-api-openapi.json#POST /pages"
+    ]
+   },
+   "orakl": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "hydra:totalItems": "integer",
+     "hydra:search": "object",
+     "@id": "string",
+     "@type": "string",
+     "hydra:first": "string",
+     "hydra:last": "string",
+     "hydra:previous": "string",
+     "hydra:next": "string",
+     "@context": null,
+     "title": [
+      "string",
+      "null"
+     ],
+     "publishedAt": [
+      "string",
+      "null"
+     ],
+     "node": null,
+     "translation": "object",
+     "slug": "string"
+    },
+    "evidence": [
+     "openapi/_original/orakl-website-openapi-original.json#GET /api/pages"
+    ]
+   },
+   "sitecore": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "displayName": "string",
+     "path": "string",
+     "language": "string",
+     "version": "integer",
+     "templateId": "string",
+     "publishingState": "string",
+     "url": "string",
+     "parentId": "string",
+     "siteId": "string"
+    },
+    "evidence": [
+     "openapi/_original/sitecore-xm-cloud-rest-api-openapi.yml#DELETE /api/v1/pages/{pageId}",
+     "openapi/_original/sitecore-xm-cloud-rest-api-openapi.yml#GET /api/v1/pages",
+     "openapi/_original/sitecore-xm-cloud-rest-api-openapi.yml#GET /api/v1/pages/{pageId}",
+     "openapi/_original/sitecore-xm-cloud-rest-api-openapi.yml#POST /api/v1/pages"
+    ]
+   },
+   "the-picklr": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/the-picklr-wordpress-rest-openapi.json#GET /wp/v2/pages",
+     "openapi/_original/the-picklr-wordpress-rest-openapi.json#GET /wp/v2/pages/{id}"
+    ]
+   },
+   "webflow": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "pages": "array",
+     "pagination": "object",
+     "id": "string",
+     "siteId": "string",
+     "title": "string",
+     "slug": "string",
+     "parentId": "string",
+     "collectionId": "string",
+     "createdOn": "string",
+     "lastUpdated": "string",
+     "archived": "boolean",
+     "draft": "boolean",
+     "canBranch": "boolean",
+     "isBranch": "boolean",
+     "branchId": "string",
+     "seo": "object",
+     "openGraph": "object",
+     "localeId": "string",
+     "publishedPath": "string"
+    },
+    "evidence": [
+     "openapi/_original/webflow-data-api-openapi.yml#GET /pages/{page_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#GET /sites/{site_id}/pages",
+     "openapi/_original/webflow-data-api-openapi.yml#PUT /pages/{page_id}",
+     "openapi/_original/webflow-pages-openapi.yml#GET /pages/{page_id}",
+     "openapi/_original/webflow-pages-openapi.yml#GET /sites/{site_id}/pages",
+     "openapi/_original/webflow-pages-openapi.yml#PUT /pages/{page_id}"
+    ]
+   },
+   "webflow-api-and-documentation-webflow": {
+    "segments": [
+     "pages"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "pages": "array",
+     "pagination": "object",
+     "id": "string",
+     "siteId": "string",
+     "title": "string",
+     "slug": "string",
+     "parentId": "string",
+     "collectionId": "string",
+     "createdOn": "string",
+     "lastUpdated": "string",
+     "archived": "boolean",
+     "draft": "boolean",
+     "canBranch": "boolean",
+     "isBranch": "boolean",
+     "branchId": "string",
+     "seo": "object",
+     "openGraph": "object",
+     "localeId": "string",
+     "publishedPath": "string"
+    },
+    "evidence": [
+     "openapi/_original/webflow-data-api-openapi.yml#GET /pages/{page_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#GET /sites/{site_id}/pages",
+     "openapi/_original/webflow-data-api-openapi.yml#PUT /pages/{page_id}"
+    ]
+   }
+  },
+  "post": {
+   "atlassian-confluence": {
+    "segments": [
+     "blogposts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "status": "string",
+     "title": "string",
+     "spaceId": "string",
+     "authorId": "string",
+     "createdAt": "string",
+     "version": "object",
+     "body": "object",
+     "_links": "object",
+     "labels": "object",
+     "properties": "object",
+     "operations": "object",
+     "likes": "object",
+     "versions": "object",
+     "isFavoritedByCurrentUser": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#DELETE /blogposts/{id}",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /blogposts",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /blogposts/{id}",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /labels/{id}/blogposts",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /spaces/{id}/blogposts",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#POST /blogposts",
+     "openapi/_original/atlassian-confluence-rest-v2-openapi.json#PUT /blogposts/{id}"
+    ]
+   },
+   "automattic": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "posts": "array",
+     "total_pages": "integer",
+     "id": "integer",
+     "date": "string",
+     "status": "string",
+     "type": "string",
+     "link": "string",
+     "title": "string",
+     "content": "string",
+     "_links": "object"
+    },
+    "evidence": [
+     "openapi/_original/automattic-jetpack-ai-plugin-openapi.yaml#GET /wpcom/v2/sites/{site_id}/ai-plugin/posts",
+     "openapi/_original/automattic-jetpack-ai-plugin-openapi.yaml#GET /wpcom/v2/sites/{site_id}/ai-plugin/posts/{post_id}",
+     "openapi/_original/automattic-jetpack-ai-plugin-openapi.yaml#POST /wpcom/v2/sites/{site_id}/ai-plugin/posts"
+    ]
+   },
+   "carbonfarm": {
+    "segments": [
+     "post"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "slug": "string",
+     "status": "string",
+     "user_created": "string",
+     "date_created": "string",
+     "user_updated": "string",
+     "date_updated": "string",
+     "datetime": "string",
+     "content": "string",
+     "featured_image": null,
+     "description": "string",
+     "type": "string",
+     "title": "string",
+     "is_pinned": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/carbonfarm-cms-openapi.json#GET /items/post",
+     "openapi/_original/carbonfarm-cms-openapi.json#GET /items/post/{id}"
+    ]
+   },
+   "confluence": {
+    "segments": [
+     "blogposts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "status": "string",
+     "title": "string",
+     "spaceId": "string",
+     "authorId": "string",
+     "createdAt": "string",
+     "version": "object",
+     "body": "object",
+     "labels": "object",
+     "_links": "object",
+     "properties": "object",
+     "operations": "object",
+     "likes": "object",
+     "versions": "object",
+     "isFavoritedByCurrentUser": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/confluence-cloud-v2.yml#DELETE /blogposts/{id}",
+     "openapi/_original/confluence-cloud-v2.yml#GET /blogposts",
+     "openapi/_original/confluence-cloud-v2.yml#GET /blogposts/{id}",
+     "openapi/_original/confluence-cloud-v2.yml#POST /blogposts",
+     "openapi/_original/confluence-cloud-v2.yml#PUT /blogposts/{id}",
+     "openapi/_original/confluence-rest-v2-openapi.json#DELETE /blogposts/{id}",
+     "openapi/_original/confluence-rest-v2-openapi.json#GET /blogposts",
+     "openapi/_original/confluence-rest-v2-openapi.json#GET /blogposts/{id}",
+     "openapi/_original/confluence-rest-v2-openapi.json#GET /labels/{id}/blogposts",
+     "openapi/_original/confluence-rest-v2-openapi.json#GET /spaces/{id}/blogposts",
+     "openapi/_original/confluence-rest-v2-openapi.json#POST /blogposts",
+     "openapi/_original/confluence-rest-v2-openapi.json#PUT /blogposts/{id}"
+    ]
+   },
+   "drupal": {
+    "segments": [
+     "article"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "links": "object"
+    },
+    "evidence": [
+     "openapi/_original/drupal-jsonapi-openapi.yml#DELETE /node/article/{uuid}",
+     "openapi/_original/drupal-jsonapi-openapi.yml#GET /node/article",
+     "openapi/_original/drupal-jsonapi-openapi.yml#GET /node/article/{uuid}",
+     "openapi/_original/drupal-jsonapi-openapi.yml#PATCH /node/article/{uuid}",
+     "openapi/_original/drupal-jsonapi-openapi.yml#POST /node/article"
+    ]
+   },
+   "ghost-org": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "uuid": "string",
+     "title": "string",
+     "slug": "string",
+     "lexical": "string",
+     "html": "string",
+     "plaintext": "string",
+     "comment_id": "string",
+     "feature_image": "string",
+     "feature_image_alt": "string",
+     "feature_image_caption": "string",
+     "featured": "boolean",
+     "status": "string",
+     "visibility": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "published_at": "string",
+     "custom_excerpt": "string",
+     "codeinjection_head": "string",
+     "codeinjection_foot": "string",
+     "custom_template": "string",
+     "canonical_url": "string",
+     "url": "string",
+     "excerpt": "string",
+     "reading_time": "integer",
+     "email_subject": "string",
+     "frontmatter": "string",
+     "og_image": "string",
+     "og_title": "string",
+     "og_description": "string",
+     "twitter_image": "string",
+     "twitter_title": "string",
+     "twitter_description": "string",
+     "meta_title": "string",
+     "meta_description": "string",
+     "tags": "array",
+     "authors": "array",
+     "primary_author": "object",
+     "primary_tag": "object",
+     "email": "object",
+     "access": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/ghost-org-admin-api-openapi.yml#DELETE /posts/{id}/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#GET /posts/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#GET /posts/{id}/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#POST /posts/",
+     "openapi/_original/ghost-org-admin-api-openapi.yml#PUT /posts/{id}/",
+     "openapi/_original/ghost-org-content-api-openapi.yml#GET /posts/",
+     "openapi/_original/ghost-org-content-api-openapi.yml#GET /posts/{id}/",
+     "openapi/_original/ghost-org-openapi.yml#DELETE /admin/posts/{id}/",
+     "openapi/_original/ghost-org-openapi.yml#GET /admin/posts/",
+     "openapi/_original/ghost-org-openapi.yml#GET /admin/posts/{id}/",
+     "openapi/_original/ghost-org-openapi.yml#GET /content/posts/",
+     "openapi/_original/ghost-org-openapi.yml#GET /content/posts/{id}/"
+    ]
+   },
+   "google-blogger": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "kind": "string",
+     "id": "string",
+     "blog": "object",
+     "published": "string",
+     "updated": "string",
+     "url": "string",
+     "selfLink": "string",
+     "title": "string",
+     "content": "string",
+     "author": "object",
+     "labels": "array",
+     "replies": "object",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/blogger.yml#DELETE /blogs/{blogId}/posts/{postId}",
+     "openapi/_original/blogger.yml#GET /blogs/{blogId}/posts",
+     "openapi/_original/blogger.yml#GET /blogs/{blogId}/posts/{postId}",
+     "openapi/_original/blogger.yml#PATCH /blogs/{blogId}/posts/{postId}",
+     "openapi/_original/blogger.yml#POST /blogs/{blogId}/posts",
+     "openapi/_original/blogger.yml#PUT /blogs/{blogId}/posts/{postId}"
+    ]
+   },
+   "newscred": {
+    "segments": [
+     "articles"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "authors": "array",
+     "created_at": "string",
+     "expires_at": "string",
+     "file_location": "string",
+     "folder_id": "string",
+     "group_id": "string",
+     "html_body": "string",
+     "id": "string",
+     "images": "array",
+     "is_archived": "boolean",
+     "labels": "array",
+     "lang_code": "string",
+     "meta_description": "string",
+     "meta_keywords": "array",
+     "meta_title": "string",
+     "meta_url": "string",
+     "modified_at": "string",
+     "owner_id": "string",
+     "owner_organization_id": "string",
+     "pixel_key": "string",
+     "source_article": "string",
+     "source_name": "string",
+     "tags": "array",
+     "thumbnail_url": "string",
+     "title": "string",
+     "url": "string",
+     "version_id": "string",
+     "version_number": "integer",
+     "library_asset_id": "string",
+     "links": "object"
+    },
+    "evidence": [
+     "openapi/_original/newscred-cmp-open-api-openapi.json#GET /articles/{id}",
+     "openapi/_original/newscred-cmp-open-api-openapi.json#GET /tasks/{task_id}/articles/{article_id}",
+     "openapi/_original/newscred-welcome-open-api-openapi.yml#GET /articles/{id}",
+     "openapi/_original/newscred-welcome-open-api-openapi.yml#GET /tasks/{task_id}/articles/{article_id}"
+    ]
+   },
+   "optimizely": {
+    "segments": [
+     "articles"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "created_at": "string",
+     "modified_at": "string",
+     "html_body": "string",
+     "folder_id": "string",
+     "file_location": "string",
+     "is_archived": "boolean",
+     "labels": "array",
+     "group_id": "string",
+     "meta_title": "string",
+     "meta_description": "string",
+     "meta_url": "string",
+     "meta_keywords": "array",
+     "source_article": "string",
+     "source_name": "string",
+     "url": "string",
+     "authors": "array",
+     "lang_code": "string",
+     "pixel_key": "string",
+     "images": "array",
+     "owner_organization_id": "string",
+     "expires_at": "string",
+     "thumbnail_url": "string",
+     "version_number": "integer",
+     "version_id": "string",
+     "tags": "array",
+     "owner_id": "string",
+     "library_asset_id": "string",
+     "links": "object"
+    },
+    "evidence": [
+     "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#GET /articles/{id}",
+     "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#GET /tasks/{task_id}/articles/{article_id}"
+    ]
+   },
+   "orakl": {
+    "segments": [
+     "post"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "@context": null,
+     "@id": "string",
+     "@type": "string",
+     "color": [
+      "string",
+      "null"
+     ],
+     "name": "string",
+     "displayName": "string",
+     "description": [
+      "string",
+      "null"
+     ],
+     "email": [
+      "string",
+      "null"
+     ],
+     "retentionTime": [
+      "string",
+      "null"
+     ],
+     "id": "integer",
+     "createdAt": [
+      "string",
+      "null"
+     ],
+     "updatedAt": [
+      "string",
+      "null"
+     ],
+     "open": "boolean",
+     "fieldsNames": "array",
+     "fieldsLabels": "array",
+     "oneLineSummary": "string",
+     "retentionTimeInterval": [
+      "string",
+      "null"
+     ],
+     "fieldsSummary": "string"
+    },
+    "evidence": [
+     "openapi/_original/orakl-website-openapi-original.json#POST /api/custom_forms/{id}/post"
+    ]
+   },
+   "publer": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PUT item"
+    ],
+    "properties": {
+     "posts": "array",
+     "total": "integer",
+     "page": "integer",
+     "per_page": "integer",
+     "total_pages": "integer",
+     "deleted_ids": "array",
+     "id": "string",
+     "text": "string",
+     "state": "string",
+     "type": "string",
+     "account_id": "string",
+     "account": "object",
+     "user": "object",
+     "scheduled_at": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "post_link": "string",
+     "media": "array",
+     "link": "object",
+     "labels": "array",
+     "auto": "boolean",
+     "recycling": "object",
+     "recurring": "object",
+     "post": "object"
+    },
+    "evidence": [
+     "openapi/_original/publer-openapi.yml#DELETE /posts",
+     "openapi/_original/publer-openapi.yml#GET /posts",
+     "openapi/_original/publer-openapi.yml#PUT /posts/{id}"
+    ]
+   },
+   "sitefinity-cms": {
+    "segments": [
+     "blogposts"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "Id": "string",
+     "Title": "string",
+     "Content": "string",
+     "Summary": "string",
+     "Status": "string",
+     "PublicationDate": "string",
+     "LastModified": "string",
+     "Author": "string",
+     "UrlName": "string",
+     "Tags": "array",
+     "Category": "array"
+    },
+    "evidence": [
+     "openapi/_original/sitefinity-cms-content-api-openapi.yml#GET /blogposts",
+     "openapi/_original/sitefinity-cms-content-api-openapi.yml#POST /blogposts"
+    ]
+   },
+   "spredfast": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "export_id": "string",
+     "accounts": "array",
+     "content_filter": "object",
+     "intiatives": "array",
+     "account_sets": "array",
+     "fields": "array",
+     "start": "string",
+     "stop": "string",
+     "timezone": "string"
+    },
+    "evidence": [
+     "openapi/_original/spredfast-analytics-api-openapi.json#POST /export/posts",
+     "openapi/_original/spredfast-analytics-api-openapi.yml#POST /export/posts"
+    ]
+   },
+   "the-picklr": {
+    "segments": [
+     "posts"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/the-picklr-wordpress-rest-openapi.json#GET /wp/v2/posts",
+     "openapi/_original/the-picklr-wordpress-rest-openapi.json#GET /wp/v2/posts/{id}"
+    ]
+   }
+  },
+  "asset": {
+   "acoustic": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "rev": "string",
+     "name": "string",
+     "classification": "string",
+     "assetType": "string",
+     "description": "string",
+     "creatorId": "string",
+     "created": "string",
+     "creator": "string",
+     "lastModifierId": "string",
+     "lastModified": "string",
+     "lastModifier": "string",
+     "systemModified": "string",
+     "fileName": "string",
+     "fileSize": "integer",
+     "mediaType": "string",
+     "keywords": "array",
+     "tags": "object",
+     "resource": "string",
+     "digest": "string",
+     "path": "string",
+     "categoryIds": "array",
+     "profiles": "array",
+     "profileRenditions": "array",
+     "renditions": "object",
+     "status": "string",
+     "valid": "boolean",
+     "draftStatus": "string",
+     "links": "object",
+     "usageRights": "object",
+     "review": "object",
+     "metadata": "object",
+     "cognitive": "object",
+     "isManaged": "boolean",
+     "altText": "string",
+     "caption": "string",
+     "linkedDocId": "string",
+     "categories": "array",
+     "isSystem": "boolean",
+     "libraryId": "string"
+    },
+    "evidence": [
+     "openapi/_original/acoustic-content-openapi-original.json#DELETE /authoring/v1/assets/{id}",
+     "openapi/_original/acoustic-content-openapi-original.json#GET /authoring/v1/assets",
+     "openapi/_original/acoustic-content-openapi-original.json#GET /authoring/v1/assets/{id}",
+     "openapi/_original/acoustic-content-openapi-original.json#POST /authoring/v1/assets",
+     "openapi/_original/acoustic-content-openapi-original.json#PUT /authoring/v1/assets/{id}",
+     "openapi/_original/acoustic-content-swagger2-original.yaml#DELETE /authoring/v1/assets/{id}",
+     "openapi/_original/acoustic-content-swagger2-original.yaml#GET /authoring/v1/assets",
+     "openapi/_original/acoustic-content-swagger2-original.yaml#GET /authoring/v1/assets/{id}",
+     "openapi/_original/acoustic-content-swagger2-original.yaml#POST /authoring/v1/assets",
+     "openapi/_original/acoustic-content-swagger2-original.yaml#PUT /authoring/v1/assets/{id}"
+    ]
+   },
+   "bynder": {
+    "segments": [
+     "media",
+     "asset",
+     "assets"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "eventType": "string",
+     "userId": "string",
+     "dateTime": "string",
+     "assetId": "string",
+     "assetType": "string",
+     "assetName": "string",
+     "assetAudit": "string",
+     "fileName": "string",
+     "mediaItemId": "string",
+     "mediaItemType": "string",
+     "name": "string",
+     "description": "string",
+     "isArchived": "boolean",
+     "type": "string",
+     "audit": "string",
+     "copyright": "string",
+     "isLimited": "boolean",
+     "datePublished": "string",
+     "isRemoved": "boolean",
+     "dateRemoved": "string",
+     "idHash": "string",
+     "phash": "string",
+     "userCreated": "string",
+     "dateCreated": "string",
+     "userModified": "string",
+     "dateModified": "string",
+     "isWatermarked": "boolean",
+     "isPublic": "boolean",
+     "metaproperties": "object",
+     "totalCount": "integer",
+     "assets": "array",
+     "accountId": "string",
+     "requesterId": "string",
+     "scanStatus": "string",
+     "dateAdded": "string",
+     "uploadEventType": "string",
+     "fileType": "string",
+     "fileSize": "integer",
+     "scanFailureReason": "string",
+     "reviewStatus": "string",
+     "reviewedById": "string",
+     "isSafe": "boolean",
+     "review_status": "string",
+     "propertyOptions": "array",
+     "brandId": "string",
+     "height": "integer",
+     "tags": "array",
+     "orientation": "string",
+     "width": "integer",
+     "extension": "array",
+     "archive": "boolean",
+     "property_limitedrights": "string",
+     "watermarked": "boolean",
+     "limited": "boolean",
+     "thumbnails": "object",
+     "transformBaseUrl": "string",
+     "videoPreviewURLs": "array",
+     "original": "string",
+     "mediaItems": "array",
+     "property_assettype": "array",
+     "views": "integer",
+     "downloads": "integer",
+     "relatedAssets": "array",
+     "activeOriginalFocusPoint": "object",
+     "username": "string",
+     "S3_filepointer": "string",
+     "filename": "string",
+     "uploader_name": "string",
+     "responsible_name": "string",
+     "original_url": "string",
+     "status": "string",
+     "versionParentID": "string",
+     "version": "number",
+     "previews": "array",
+     "sub_versions": "array"
+    },
+    "evidence": [
+     "openapi/_original/bynder-analytics-openapi.json#GET /v7/analytics/api/v1/asset/{assetId}",
+     "openapi/_original/bynder-analytics-openapi.json#GET /v7/analytics/api/v1/report/asset",
+     "openapi/_original/bynder-analytics-openapi.json#GET /v7/analytics/api/v1/report/asset/{assetId}",
+     "openapi/_original/bynder-antivirus-openapi.json#GET /v7/quarantine/v1/assets",
+     "openapi/_original/bynder-antivirus-openapi.json#GET /v7/quarantine/v1/assets/{asset_id}",
+     "openapi/_original/bynder-antivirus-openapi.json#PUT /v7/quarantine/v1/assets/{asset_id}",
+     "openapi/_original/bynder-asset-v4-openapi.json#DELETE /api/v4/media/{id}",
+     "openapi/_original/bynder-asset-v4-openapi.json#GET /api/v4/media/",
+     "openapi/_original/bynder-asset-v4-openapi.json#GET /api/v4/media/{id}",
+     "openapi/_original/bynder-asset-v4-openapi.json#POST /api/v4/media/{id}",
+     "openapi/_original/bynder-collections-v4-openapi.json#DELETE /api/v4/collections/{id}/media",
+     "openapi/_original/bynder-collections-v4-openapi.json#GET /api/v4/collections/{id}/media"
+    ]
+   },
+   "carbonfarm": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/carbonfarm-cms-openapi.json#GET /assets/{id}"
+    ]
+   },
+   "ci-hub": {
+    "segments": [
+     "asset"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "parentPath": "string",
+     "fileSize": "number",
+     "xSizePx": "number",
+     "ySizePx": "number",
+     "created": "number",
+     "modified": "number",
+     "mimeType": "string",
+     "version": "number",
+     "versionComment": "string",
+     "downloadHashMd5": "string",
+     "downloadHashSha1": "string",
+     "downloadHashSha256Split4MB": "string",
+     "downloadHashSha256First16MB": "string",
+     "downloadHashSha256": "string",
+     "downloadHashSha512": "string",
+     "downloadHashFileAttributes": "string",
+     "downloadHashCrc32": "string",
+     "thumbnailUrl": "string",
+     "downloadUrl": "string",
+     "assetDetailsExternalUrl": "string",
+     "lockedBy": "string",
+     "capabilities": "object",
+     "type": "string",
+     "conversions": "array",
+     "displayVersion": "number",
+     "title": "string",
+     "caption": "string",
+     "copyright": "string",
+     "termsOfUse": "string",
+     "instructions": "string",
+     "colorSpace": "string",
+     "releasedBy": "string",
+     "releasedDate": "number",
+     "released": "string",
+     "keywords": "array",
+     "categories": "array",
+     "states": "array",
+     "exif": "object",
+     "iptc": "object",
+     "xmp": "object",
+     "values": "array",
+     "relatedFolderId": "string",
+     "masterId": "string"
+    },
+    "evidence": [
+     "openapi/_original/ci-hub-access-openapi.yml#GET /assets/asset/{assetId}"
+    ]
+   },
+   "contentstack": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "assets": "array",
+     "count": "integer",
+     "uid": "string",
+     "title": "string",
+     "url": "string",
+     "filename": "string",
+     "content_type": "string",
+     "file_size": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /assets",
+     "openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /assets/{asset_uid}",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#GET /assets",
+     "openapi/_original/contentstack-content-management-api-openapi.yml#POST /assets"
+    ]
+   },
+   "datocms": {
+    "segments": [
+     "uploads"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "meta": "object"
+    },
+    "evidence": [
+     "openapi/_original/datocms-content-management-api.yml#GET /uploads",
+     "openapi/_original/datocms-content-management-api.yml#POST /uploads"
+    ]
+   },
+   "dotcms": {
+    "segments": [
+     "assets",
+     "asset"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "errors": "array",
+     "entity": "object",
+     "messages": "array",
+     "i18nMessagesMap": "object",
+     "permissions": "array",
+     "pagination": "object",
+     "bundleId": "string",
+     "bundleName": "string",
+     "assetIds": "array",
+     "cascade": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/dotcms-rest-api-openapi.json#DELETE /api/v1/bundles/{bundleId}/assets",
+     "openapi/_original/dotcms-rest-api-openapi.json#GET /api/bundle/{bundleId}/assets",
+     "openapi/_original/dotcms-rest-api-openapi.json#GET /api/v2/assets",
+     "openapi/_original/dotcms-rest-api-openapi.json#GET /api/v2/assets/{identifier}",
+     "openapi/_original/dotcms-rest-api-openapi.json#POST /api/v1/assets",
+     "openapi/_original/dotcms-rest-api-openapi.json#POST /api/v1/bundles/assets",
+     "openapi/_original/dotcms-rest-api-openapi.json#PUT /api/v1/assets",
+     "openapi/_original/dotcms-rest-api-openapi.json#PUT /api/v1/permissions/role/{roleId}/asset/{assetId}",
+     "openapi/_original/dotcms-rest-api-openapi.json#PUT /api/v1/permissions/user/{userId}/asset/{assetId}"
+    ]
+   },
+   "later": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "number",
+     "type": "string",
+     "name": "string",
+     "selected": "boolean",
+     "externalId": "string",
+     "externalBusinessPortfolioId": "string",
+     "administratorId": "number",
+     "integrationId": "number",
+     "communityId": "string",
+     "handle": "string",
+     "status": "number",
+     "pictureUrl": "string",
+     "externalFacebookPageId": "string"
+    },
+    "evidence": [
+     "openapi/_original/later-influence-api-openapi-original.json#GET /v2/marketers/meta/business/assets",
+     "openapi/_original/later-influence-api-openapi-original.json#PATCH /v2/marketers/meta/business/assets/{id}",
+     "openapi/_original/later-influence-api-openapi.json#GET /v2/marketers/meta/business/assets",
+     "openapi/_original/later-influence-api-openapi.json#PATCH /v2/marketers/meta/business/assets/{id}"
+    ]
+   },
+   "newscred": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "content": "object",
+     "created_at": "string",
+     "file_extension": "string",
+     "file_location": "string",
+     "folder_id": "string",
+     "id": "string",
+     "is_archived": "boolean",
+     "labels": "array",
+     "links": "object",
+     "mime_type": "string",
+     "modified_at": "string",
+     "owner_organization_id": "string",
+     "thumbnail_url": "string",
+     "title": "string",
+     "type": "string",
+     "key": "string",
+     "library_asset_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/newscred-cmp-open-api-openapi.json#GET /assets",
+     "openapi/_original/newscred-cmp-open-api-openapi.json#GET /tasks/{id}/assets",
+     "openapi/_original/newscred-cmp-open-api-openapi.json#POST /assets",
+     "openapi/_original/newscred-cmp-open-api-openapi.json#POST /tasks/{id}/assets",
+     "openapi/_original/newscred-welcome-open-api-openapi.yml#GET /assets",
+     "openapi/_original/newscred-welcome-open-api-openapi.yml#GET /tasks/{id}/assets",
+     "openapi/_original/newscred-welcome-open-api-openapi.yml#POST /assets",
+     "openapi/_original/newscred-welcome-open-api-openapi.yml#POST /tasks/{id}/assets"
+    ]
+   },
+   "optimizely": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "url": "string",
+     "content_type": "string",
+     "file_size": "integer",
+     "created": "string",
+     "title": "string",
+     "description": "string",
+     "type": "string",
+     "thumbnail_url": "string",
+     "file_name": "string",
+     "mime_type": "string",
+     "labels": "array",
+     "created_at": "string",
+     "updated_at": "string",
+     "file_extension": "string",
+     "modified_at": "string",
+     "folder_id": "string",
+     "file_location": "string",
+     "is_archived": "boolean",
+     "content": "object",
+     "links": "object",
+     "owner_organization_id": "string",
+     "key": "string",
+     "library_asset_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/optimizely-campaign-openapi.yml#GET /{clientId}/assets",
+     "openapi/_original/optimizely-campaign-openapi.yml#POST /{clientId}/assets",
+     "openapi/_original/optimizely-cmp-openapi.yml#DELETE /assets/{assetId}",
+     "openapi/_original/optimizely-cmp-openapi.yml#GET /assets",
+     "openapi/_original/optimizely-cmp-openapi.yml#GET /assets/{assetId}",
+     "openapi/_original/optimizely-cmp-openapi.yml#POST /assets",
+     "openapi/_original/optimizely-cmp-openapi.yml#PUT /assets/{assetId}",
+     "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#GET /assets",
+     "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#GET /tasks/{id}/assets",
+     "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#POST /assets",
+     "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#POST /tasks/{id}/assets"
+    ]
+   },
+   "phrase": {
+    "segments": [
+     "uploads"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "filename": "string",
+     "format": "string",
+     "state": "string",
+     "tag": "string",
+     "tags": "array",
+     "url": "string",
+     "user": "object",
+     "summary": "object",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/phrase-strings-openapi-original.yaml#GET /projects/{project_id}/uploads",
+     "openapi/_original/phrase-strings-openapi-original.yaml#GET /projects/{project_id}/uploads/{id}",
+     "openapi/_original/phrase-strings-openapi-original.yaml#POST /projects/{project_id}/uploads"
+    ]
+   },
+   "publer": {
+    "segments": [
+     "media"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "media": "array",
+     "total": "integer",
+     "id": "string",
+     "path": "string",
+     "thumbnail": "string",
+     "validity": "object",
+     "width": "number",
+     "height": "number",
+     "source": "string",
+     "type": "string",
+     "name": "string",
+     "caption": "string"
+    },
+    "evidence": [
+     "openapi/_original/publer-openapi.yml#GET /media",
+     "openapi/_original/publer-openapi.yml#POST /media"
+    ]
+   },
+   "salesforce-experience-cloud": {
+    "segments": [
+     "media"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "altText": "string",
+     "fileName": "string",
+     "mediaType": "string",
+     "mimeType": "string",
+     "referenceId": "string",
+     "title": "string",
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#DELETE /media/{mediaId}",
+     "openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#GET /media",
+     "openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#GET /media/{mediaId}",
+     "openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#POST /media"
+    ]
+   },
+   "salesforce-marketing-cloud": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "customerKey": "string",
+     "name": "string",
+     "description": "string",
+     "assetType": "object",
+     "category": "object",
+     "content": "string",
+     "views": "object",
+     "data": "object",
+     "tags": "array",
+     "status": "object",
+     "createdDate": "string",
+     "modifiedDate": "string",
+     "createdBy": "object",
+     "modifiedBy": "object"
+    },
+    "evidence": [
+     "openapi/_original/salesforce-marketing-cloud-openapi.yml#DELETE /asset/v1/content/assets/{id}",
+     "openapi/_original/salesforce-marketing-cloud-openapi.yml#GET /asset/v1/content/assets",
+     "openapi/_original/salesforce-marketing-cloud-openapi.yml#GET /asset/v1/content/assets/{id}",
+     "openapi/_original/salesforce-marketing-cloud-openapi.yml#POST /asset/v1/content/assets",
+     "openapi/_original/salesforce-marketing-cloud-openapi.yml#PUT /asset/v1/content/assets/{id}"
+    ]
+   },
+   "showpad": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "currentFile": "object",
+     "name": "string",
+     "division": "object",
+     "status": "string",
+     "type": "string",
+     "slug": "string",
+     "externalId": "string",
+     "description": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "expiresAt": "string",
+     "releasedAt": "string",
+     "draftedAt": "string",
+     "lastUploadedAt": "string",
+     "permissions": "object",
+     "isProcessedUsed": "boolean",
+     "isSpeakerNotesEnabled": "boolean",
+     "isDivisionShared": "boolean",
+     "isSensitive": "boolean",
+     "isArchived": "boolean",
+     "isRenderExternalAllowed": "boolean",
+     "isOnlyEntireDocumentShareable": "boolean",
+     "lockedPages": "array",
+     "enforcedPages": "object",
+     "duration": "integer",
+     "pageCount": "integer",
+     "wordCount": "integer",
+     "competencies": "array",
+     "url": "string",
+     "checksum": "string",
+     "size": "integer",
+     "tags": "array",
+     "countries": "array",
+     "languages": "array",
+     "authors": "array",
+     "downloadableExternal": "array",
+     "downloadableInternal": "array",
+     "localization": "object",
+     "origin": "object"
+    },
+    "evidence": [
+     "openapi/_original/showpad-v3-openapi-original.yml#DELETE /assets/{id}.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#GET /assets.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#GET /assets/{id}.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#GET /channels/{id}/assets.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#GET /divisions/{id}/assets.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#GET /exports/assets.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#GET /tags/{id1}/assets/{id2}.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#GET /tags/{id}/assets.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#POST /assets.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#POST /assets/{id}.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#POST /divisions/{id}/assets.json",
+     "openapi/_original/showpad-v3-openapi-original.yml#POST /tags/{id}/assets.json"
+    ]
+   },
+   "spredfast": {
+    "segments": [
+     "asset",
+     "assets"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "sfEntityType": "string",
+     "id": "string",
+     "companyId": "string",
+     "folderId": "string",
+     "name": "string",
+     "text": "string",
+     "intendedForPublishing": "boolean",
+     "intendedForModeration": "boolean",
+     "createdDate": "integer",
+     "contentLabels": "array",
+     "services": "array",
+     "startDate": "string",
+     "endDate": "string",
+     "removalDate": "string",
+     "image": "string",
+     "imageMedium": "string",
+     "imageThumb": "string",
+     "video": "string",
+     "videoThumb": "string",
+     "externalId": "string",
+     "description": "string",
+     "originSystem": "string",
+     "originId": "string"
+    },
+    "evidence": [
+     "openapi/_original/spredfast-conversations-api-openapi.json#GET /conversations/asset/{assetId}",
+     "openapi/_original/spredfast-conversations-api-openapi.json#GET /conversations/folder/{folderId}/assets",
+     "openapi/_original/spredfast-conversations-api-openapi.json#POST /conversations/asset",
+     "openapi/_original/spredfast-conversations-api-openapi.json#PUT /conversations/asset/{assetId}",
+     "openapi/_original/spredfast-conversations-api-v1-openapi.json#GET /{environment}/v1/company/{companyId}/asset/{assetId}",
+     "openapi/_original/spredfast-conversations-api-v1-openapi.json#GET /{environment}/v1/company/{companyId}/folder/{folderId}/assets",
+     "openapi/_original/spredfast-conversations-api-v1-openapi.json#POST /{environment}/v1/company/{companyId}/asset",
+     "openapi/_original/spredfast-conversations-api-v1-openapi.json#PUT /{environment}/v1/company/{companyId}/asset/{assetId}",
+     "openapi/_original/spredfast-conversations-api-v1-openapi.yml#GET /{environment}/v1/company/{companyId}/asset/{assetId}",
+     "openapi/_original/spredfast-conversations-api-v1-openapi.yml#GET /{environment}/v1/company/{companyId}/folder/{folderId}/assets",
+     "openapi/_original/spredfast-conversations-api-v1-openapi.yml#POST /{environment}/v1/company/{companyId}/asset",
+     "openapi/_original/spredfast-conversations-api-v1-openapi.yml#PUT /{environment}/v1/company/{companyId}/asset/{assetId}"
+    ]
+   },
+   "storyblok": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "filename": "string",
+     "content_type": "string",
+     "content_length": "integer",
+     "asset_folder_id": "integer",
+     "created_at": "string",
+     "updated_at": "string",
+     "is_private": "boolean",
+     "alt": "string",
+     "title": "string",
+     "copyright": "string",
+     "focus": "string",
+     "post_url": "string",
+     "fields": "object",
+     "size": "string"
+    },
+    "evidence": [
+     "openapi/_original/storyblok-management-api-openapi.yml#DELETE /spaces/{space_id}/assets/{asset_id}",
+     "openapi/_original/storyblok-management-api-openapi.yml#GET /spaces/{space_id}/assets",
+     "openapi/_original/storyblok-management-api-openapi.yml#GET /spaces/{space_id}/assets/{asset_id}",
+     "openapi/_original/storyblok-management-api-openapi.yml#POST /spaces/{space_id}/assets"
+    ]
+   },
+   "templafy": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "folderId": "integer",
+     "name": "string",
+     "description": "string",
+     "tags": "array",
+     "fileSize": "integer",
+     "checksum": "string",
+     "fileExtension": "string",
+     "navigationPath": "string",
+     "externalData": "string",
+     "modifiedAt": "string",
+     "assetState": "string",
+     "downloadUrl": "string",
+     "smallPreviewLink": "string",
+     "largePreviewLink": "string",
+     "dimensions": "object",
+     "mimeType": "string",
+     "automaticTags": "array",
+     "url": "string",
+     "assetType": "string",
+     "childrenAssetIds": "array",
+     "slideElementDeckId": "integer",
+     "slideDeckId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/documents/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/email-elements/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/images/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/links/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/pdfs/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/presentations/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/slide-elements/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/slides/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/spreadsheets/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/text-elements/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#GET /libraries/{spaceId}/documents/assets/{assetId}",
+     "openapi/_original/templafy-public-api-v3-openapi.json#GET /libraries/{spaceId}/documents/folders/{folderId}/assets"
+    ]
+   },
+   "the-picklr": {
+    "segments": [
+     "media"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/the-picklr-wordpress-rest-openapi.json#GET /wp/v2/media",
+     "openapi/_original/the-picklr-wordpress-rest-openapi.json#GET /wp/v2/media/{id}"
+    ]
+   },
+   "uniform": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "assets": "array",
+     "totalCount": "integer",
+     "facets": "object",
+     "projectId": "string",
+     "releaseId": "string",
+     "asset": "object",
+     "assetId": "string"
+    },
+    "evidence": [
+     "openapi/_original/uniform-platform-api-openapi.json#DELETE /api/v1/assets",
+     "openapi/_original/uniform-platform-api-openapi.json#GET /api/v1/assets",
+     "openapi/_original/uniform-platform-api-openapi.json#PUT /api/v1/assets"
+    ]
+   },
+   "webflow": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "assets": "array",
+     "pagination": "object",
+     "uploadDetails": "object",
+     "contentType": "string",
+     "id": "string",
+     "parentFolder": "string",
+     "uploadUrl": "string",
+     "assetUrl": "string",
+     "hostedUrl": "string",
+     "originalFileName": "string",
+     "createdOn": "string",
+     "lastUpdated": "string",
+     "fileName": "string",
+     "fileHash": "string",
+     "size": "integer",
+     "siteId": "string",
+     "displayName": "string",
+     "variants": "array",
+     "altText": "string",
+     "localeId": "string"
+    },
+    "evidence": [
+     "openapi/_original/webflow-assets-openapi.yml#DELETE /assets/{asset_id}",
+     "openapi/_original/webflow-assets-openapi.yml#GET /assets/{asset_id}",
+     "openapi/_original/webflow-assets-openapi.yml#GET /sites/{site_id}/assets",
+     "openapi/_original/webflow-assets-openapi.yml#PATCH /assets/{asset_id}",
+     "openapi/_original/webflow-assets-openapi.yml#POST /sites/{site_id}/assets",
+     "openapi/_original/webflow-data-api-openapi.yml#DELETE /assets/{asset_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#GET /assets/{asset_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#GET /sites/{site_id}/assets",
+     "openapi/_original/webflow-data-api-openapi.yml#PATCH /assets/{asset_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#POST /sites/{site_id}/assets"
+    ]
+   },
+   "webflow-api-and-documentation-webflow": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "assets": "array",
+     "pagination": "object",
+     "uploadDetails": "object",
+     "contentType": "string",
+     "id": "string",
+     "parentFolder": "string",
+     "uploadUrl": "string",
+     "assetUrl": "string",
+     "hostedUrl": "string",
+     "originalFileName": "string",
+     "createdOn": "string",
+     "lastUpdated": "string",
+     "fileName": "string",
+     "fileHash": "string",
+     "size": "integer",
+     "siteId": "string",
+     "displayName": "string",
+     "variants": "array",
+     "altText": "string",
+     "localeId": "string"
+    },
+    "evidence": [
+     "openapi/_original/webflow-data-api-openapi.yml#DELETE /assets/{asset_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#GET /assets/{asset_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#GET /sites/{site_id}/assets",
+     "openapi/_original/webflow-data-api-openapi.yml#PATCH /assets/{asset_id}",
+     "openapi/_original/webflow-data-api-openapi.yml#POST /sites/{site_id}/assets"
+    ]
+   },
+   "yodeck-signage": {
+    "segments": [
+     "media"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "media_type": "string",
+     "source_url": "string",
+     "duration": "integer",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/yodeck-signage-openapi.yml#DELETE /media/{id}/",
+     "openapi/_original/yodeck-signage-openapi.yml#GET /media/",
+     "openapi/_original/yodeck-signage-openapi.yml#GET /media/{id}/",
+     "openapi/_original/yodeck-signage-openapi.yml#PATCH /media/{id}/",
+     "openapi/_original/yodeck-signage-openapi.yml#POST /media/"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "acoustic",
+    "acquia",
+    "adobe-experience-manager",
+    "adonmoprivatelimited",
+    "amerihealth-caritas",
+    "atlassian-confluence",
+    "automattic",
+    "bigtincan",
+    "bloomreach",
+    "box",
+    "bynder",
+    "carbonfarm",
+    "ceros",
+    "ci-hub",
+    "clearslide",
+    "coda-project",
+    "columbia-sportswear",
+    "confluence",
+    "contensis",
+    "contentful-global",
+    "contentstack",
+    "datocms",
+    "devoted-health",
+    "django-cms",
+    "dotcms",
+    "drupal",
+    "duda",
+    "dyspatch",
+    "ghost-org",
+    "google-blogger",
+    "independence-blue-cross",
+    "kontent-ai",
+    "later",
+    "makeswift",
+    "newscred",
+    "ninetailed",
+    "nuxeo",
+    "optimizely",
+    "orakl",
+    "panopto",
+    "payload",
+    "payloadcms",
+    "phrase",
+    "plasmic",
+    "progress-software",
+    "publer",
+    "rightsline",
+    "salesforce-experience-cloud",
+    "salesforce-marketing-cloud",
+    "sanity",
+    "seismic",
+    "showpad",
+    "sitecore",
+    "sitefinity-cms",
+    "spekit",
+    "spredfast",
+    "storyblok",
+    "strapi",
+    "templafy",
+    "the-picklr",
+    "transifex",
+    "typo3",
+    "uniform",
+    "veeva",
+    "videri",
+    "webflow",
+    "webflow-api-and-documentation-webflow",
+    "wix",
+    "wpengine",
+    "yodeck-signage",
+    "zesty"
+   ],
+   "kebab-case": [
+    "acoustic",
+    "acquia",
+    "atlassian-confluence",
+    "automattic",
+    "bigtincan",
+    "bloomreach",
+    "bynder",
+    "ceros",
+    "confluence",
+    "contentful-global",
+    "contentstack",
+    "datocms",
+    "django-cms",
+    "dotcms",
+    "independence-blue-cross",
+    "kontent-ai",
+    "later",
+    "newscred",
+    "optimizely",
+    "panopto",
+    "payload",
+    "payloadcms",
+    "progress-software",
+    "publer",
+    "salesforce-experience-cloud",
+    "seismic",
+    "showpad",
+    "sitecore",
+    "spekit",
+    "storyblok",
+    "strapi",
+    "templafy",
+    "typo3",
+    "uniform",
+    "videri"
+   ],
+   "snake_case": [
+    "acoustic",
+    "adonmoprivatelimited",
+    "bigtincan",
+    "box",
+    "bynder",
+    "contentful-global",
+    "contentstack",
+    "django-cms",
+    "dotcms",
+    "drupal",
+    "later",
+    "optimizely",
+    "orakl",
+    "phrase",
+    "progress-software",
+    "publer",
+    "spredfast",
+    "storyblok",
+    "the-picklr",
+    "transifex",
+    "videri",
+    "webflow",
+    "webflow-api-and-documentation-webflow",
+    "wpengine"
+   ],
+   "other": [
+    "amerihealth-caritas",
+    "atlassian-confluence",
+    "automattic",
+    "box",
+    "bynder",
+    "confluence",
+    "devoted-health",
+    "dotcms",
+    "independence-blue-cross",
+    "later",
+    "nuxeo",
+    "optimizely",
+    "progress-software",
+    "sitecore",
+    "sitefinity-cms",
+    "spredfast",
+    "storyblok",
+    "transifex"
+   ],
+   "camelCase": [
+    "atlassian-confluence",
+    "box",
+    "bynder",
+    "ci-hub",
+    "coda-project",
+    "confluence",
+    "dotcms",
+    "dyspatch",
+    "later",
+    "nuxeo",
+    "optimizely",
+    "panopto",
+    "progress-software",
+    "salesforce-experience-cloud",
+    "salesforce-marketing-cloud",
+    "spredfast",
+    "typo3"
+   ],
+   "PascalCase": [
+    "amerihealth-caritas",
+    "bloomreach",
+    "columbia-sportswear",
+    "contentstack",
+    "devoted-health",
+    "independence-blue-cross",
+    "optimizely"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "acoustic",
+    "acquia",
+    "adonmoprivatelimited",
+    "amerihealth-caritas",
+    "atlassian-confluence",
+    "automattic",
+    "bigtincan",
+    "bloomreach",
+    "box",
+    "bynder",
+    "carbonfarm",
+    "ceros",
+    "ci-hub",
+    "coda-project",
+    "confluence",
+    "contensis",
+    "contentful-global",
+    "contentstack",
+    "devoted-health",
+    "django-cms",
+    "dotcms",
+    "drupal",
+    "duda",
+    "dyspatch",
+    "ghost-org",
+    "google-blogger",
+    "independence-blue-cross",
+    "kontent-ai",
+    "later",
+    "makeswift",
+    "newscred",
+    "ninetailed",
+    "nuxeo",
+    "optimizely",
+    "orakl",
+    "panopto",
+    "phrase",
+    "plasmic",
+    "progress-software",
+    "publer",
+    "rightsline",
+    "salesforce-experience-cloud",
+    "salesforce-marketing-cloud",
+    "sanity",
+    "seismic",
+    "showpad",
+    "sitecore",
+    "spekit",
+    "spredfast",
+    "storyblok",
+    "strapi",
+    "the-picklr",
+    "transifex",
+    "uniform",
+    "veeva",
+    "videri",
+    "webflow",
+    "webflow-api-and-documentation-webflow",
+    "wpengine",
+    "yodeck-signage",
+    "zesty"
+   ],
+   "camelCase": [
+    "acoustic",
+    "acquia",
+    "amerihealth-caritas",
+    "atlassian-confluence",
+    "bigtincan",
+    "bynder",
+    "ceros",
+    "ci-hub",
+    "coda-project",
+    "confluence",
+    "contensis",
+    "contentful-global",
+    "devoted-health",
+    "dotcms",
+    "dyspatch",
+    "google-blogger",
+    "later",
+    "makeswift",
+    "nuxeo",
+    "optimizely",
+    "orakl",
+    "panopto",
+    "progress-software",
+    "publer",
+    "rightsline",
+    "salesforce-experience-cloud",
+    "salesforce-marketing-cloud",
+    "sanity",
+    "seismic",
+    "showpad",
+    "sitecore",
+    "spredfast",
+    "strapi",
+    "templafy",
+    "uniform",
+    "videri",
+    "webflow",
+    "webflow-api-and-documentation-webflow",
+    "zesty"
+   ],
+   "snake_case": [
+    "adonmoprivatelimited",
+    "automattic",
+    "bigtincan",
+    "bloomreach",
+    "box",
+    "bynder",
+    "carbonfarm",
+    "contentful-global",
+    "contentstack",
+    "dotcms",
+    "duda",
+    "later",
+    "newscred",
+    "optimizely",
+    "phrase",
+    "progress-software",
+    "publer",
+    "showpad",
+    "sitecore",
+    "spekit",
+    "spredfast",
+    "storyblok",
+    "strapi",
+    "the-picklr",
+    "videri",
+    "wpengine",
+    "yodeck-signage"
+   ],
+   "other": [
+    "acoustic",
+    "amerihealth-caritas",
+    "atlassian-confluence",
+    "bigtincan",
+    "bloomreach",
+    "bynder",
+    "clearslide",
+    "confluence",
+    "datocms",
+    "devoted-health",
+    "dotcms",
+    "drupal",
+    "duda",
+    "independence-blue-cross",
+    "later",
+    "newscred",
+    "optimizely",
+    "orakl",
+    "plasmic",
+    "progress-software",
+    "salesforce-marketing-cloud",
+    "sitefinity-cms",
+    "spredfast",
+    "strapi",
+    "the-picklr",
+    "transifex"
+   ],
+   "kebab-case": [
+    "acoustic",
+    "amerihealth-caritas",
+    "atlassian-confluence",
+    "box",
+    "confluence",
+    "devoted-health",
+    "independence-blue-cross",
+    "the-picklr"
+   ],
+   "PascalCase": [
+    "columbia-sportswear",
+    "independence-blue-cross",
+    "optimizely",
+    "panopto"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "acoustic",
+    "acquia",
+    "atlassian-confluence",
+    "automattic",
+    "bigtincan",
+    "bloomreach",
+    "box",
+    "bynder",
+    "carbonfarm",
+    "coda-project",
+    "confluence",
+    "contentful-global",
+    "contentstack",
+    "django-cms",
+    "dotcms",
+    "duda",
+    "ghost-org",
+    "kontent-ai",
+    "later",
+    "makeswift",
+    "newscred",
+    "optimizely",
+    "progress-software",
+    "rightsline",
+    "seismic",
+    "showpad",
+    "sitecore",
+    "spredfast",
+    "transifex",
+    "uniform",
+    "veeva",
+    "videri",
+    "webflow",
+    "webflow-api-and-documentation-webflow",
+    "wpengine",
+    "zesty"
+   ],
+   "offset": [
+    "acoustic",
+    "acquia",
+    "amerihealth-caritas",
+    "automattic",
+    "bigtincan",
+    "box",
+    "carbonfarm",
+    "ceros",
+    "devoted-health",
+    "django-cms",
+    "dotcms",
+    "duda",
+    "later",
+    "newscred",
+    "nuxeo",
+    "optimizely",
+    "rightsline",
+    "seismic",
+    "showpad",
+    "sitecore",
+    "spredfast",
+    "the-picklr",
+    "uniform",
+    "veeva",
+    "webflow",
+    "webflow-api-and-documentation-webflow",
+    "wpengine"
+   ],
+   "page": [
+    "adonmoprivatelimited",
+    "automattic",
+    "bigtincan",
+    "bloomreach",
+    "bynder",
+    "ceros",
+    "dotcms",
+    "ghost-org",
+    "later",
+    "optimizely",
+    "orakl",
+    "panopto",
+    "phrase",
+    "progress-software",
+    "publer",
+    "salesforce-experience-cloud",
+    "salesforce-marketing-cloud",
+    "sitecore",
+    "storyblok",
+    "strapi",
+    "the-picklr",
+    "videri",
+    "yodeck-signage",
+    "zesty"
+   ],
+   "page_size": [
+    "adonmoprivatelimited",
+    "ceros",
+    "clearslide",
+    "contensis",
+    "dotcms",
+    "later",
+    "newscred",
+    "nuxeo",
+    "optimizely",
+    "panopto",
+    "progress-software",
+    "salesforce-experience-cloud",
+    "salesforce-marketing-cloud",
+    "sitecore",
+    "spekit",
+    "spredfast",
+    "strapi",
+    "templafy",
+    "yodeck-signage"
+   ],
+   "start": [
+    "acoustic",
+    "atlassian-confluence",
+    "bloomreach",
+    "bynder",
+    "confluence",
+    "dotcms",
+    "progress-software",
+    "spredfast",
+    "videri"
+   ],
+   "cursor": [
+    "atlassian-confluence",
+    "bigtincan",
+    "bynder",
+    "confluence",
+    "dyspatch",
+    "progress-software",
+    "showpad",
+    "spekit",
+    "uniform"
+   ],
+   "count": [
+    "acoustic",
+    "amerihealth-caritas",
+    "bynder",
+    "devoted-health",
+    "dotcms",
+    "independence-blue-cross",
+    "optimizely",
+    "videri"
+   ],
+   "per_page": [
+    "dotcms",
+    "optimizely",
+    "phrase",
+    "progress-software",
+    "spredfast",
+    "storyblok",
+    "the-picklr"
+   ],
+   "skip": [
+    "columbia-sportswear",
+    "contentstack",
+    "kontent-ai",
+    "optimizely",
+    "sitecore",
+    "sitefinity-cms"
+   ],
+   "size": [
+    "bigtincan",
+    "ci-hub",
+    "progress-software",
+    "videri"
+   ],
+   "page_token": [
+    "coda-project",
+    "google-blogger",
+    "optimizely",
+    "salesforce-experience-cloud"
+   ],
+   "before": [
+    "bynder",
+    "progress-software",
+    "the-picklr"
+   ],
+   "after": [
+    "progress-software",
+    "spredfast",
+    "the-picklr"
+   ],
+   "next": [
+    "atlassian-confluence",
+    "confluence"
+   ],
+   "max_results": [
+    "google-blogger",
+    "nuxeo"
+   ],
+   "top": [
+    "optimizely",
+    "sitefinity-cms"
+   ],
+   "starting_after": [
+    "makeswift"
+   ]
+  },
+  "property": {
+   "lower": [
+    "acoustic",
+    "atlassian-confluence",
+    "automattic",
+    "box",
+    "bynder",
+    "carbonfarm",
+    "ceros",
+    "ci-hub",
+    "coda-project",
+    "confluence",
+    "contensis",
+    "contentstack",
+    "datocms",
+    "django-cms",
+    "dotcms",
+    "drupal",
+    "duda",
+    "ghost-org",
+    "google-blogger",
+    "later",
+    "makeswift",
+    "newscred",
+    "optimizely",
+    "orakl",
+    "phrase",
+    "publer",
+    "salesforce-experience-cloud",
+    "salesforce-marketing-cloud",
+    "showpad",
+    "sitecore",
+    "spredfast",
+    "storyblok",
+    "strapi",
+    "templafy",
+    "uniform",
+    "webflow",
+    "webflow-api-and-documentation-webflow",
+    "yodeck-signage"
+   ],
+   "camelCase": [
+    "acoustic",
+    "atlassian-confluence",
+    "bynder",
+    "ceros",
+    "ci-hub",
+    "coda-project",
+    "confluence",
+    "contensis",
+    "dotcms",
+    "google-blogger",
+    "later",
+    "makeswift",
+    "optimizely",
+    "orakl",
+    "salesforce-experience-cloud",
+    "salesforce-marketing-cloud",
+    "showpad",
+    "sitecore",
+    "spredfast",
+    "strapi",
+    "templafy",
+    "uniform",
+    "webflow",
+    "webflow-api-and-documentation-webflow"
+   ],
+   "snake_case": [
+    "automattic",
+    "box",
+    "bynder",
+    "carbonfarm",
+    "contentstack",
+    "duda",
+    "ghost-org",
+    "newscred",
+    "optimizely",
+    "phrase",
+    "publer",
+    "spredfast",
+    "storyblok",
+    "yodeck-signage"
+   ],
+   "other": [
+    "atlassian-confluence",
+    "automattic",
+    "bynder",
+    "confluence",
+    "contentstack",
+    "orakl"
+   ],
+   "PascalCase": [
+    "sitefinity-cms"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "acoustic",
+    "acquia",
+    "adonmoprivatelimited",
+    "amerihealth-caritas",
+    "atlassian-confluence",
+    "bigtincan",
+    "box",
+    "bynder",
+    "carbonfarm",
+    "confluence",
+    "contentful-global",
+    "contentstack",
+    "devoted-health",
+    "django-cms",
+    "dotcms",
+    "drupal",
+    "ghost-org",
+    "independence-blue-cross",
+    "later",
+    "makeswift",
+    "newscred",
+    "nuxeo",
+    "optimizely",
+    "orakl",
+    "panopto",
+    "payload",
+    "payloadcms",
+    "phrase",
+    "progress-software",
+    "publer",
+    "rightsline",
+    "salesforce-marketing-cloud",
+    "sanity",
+    "showpad",
+    "sitecore",
+    "spredfast",
+    "storyblok",
+    "strapi",
+    "templafy",
+    "the-picklr",
+    "typo3",
+    "videri",
+    "wix",
+    "yodeck-signage"
+   ],
+   "camelCase": [
+    "acoustic",
+    "acquia",
+    "adobe-experience-manager",
+    "atlassian-confluence",
+    "bloomreach",
+    "bynder",
+    "ceros",
+    "ci-hub",
+    "clearslide",
+    "coda-project",
+    "confluence",
+    "contensis",
+    "contentful-global",
+    "datocms",
+    "dotcms",
+    "dyspatch",
+    "google-blogger",
+    "later",
+    "makeswift",
+    "ninetailed",
+    "nuxeo",
+    "optimizely",
+    "panopto",
+    "payload",
+    "payloadcms",
+    "progress-software",
+    "rightsline",
+    "salesforce-experience-cloud",
+    "salesforce-marketing-cloud",
+    "sanity",
+    "seismic",
+    "showpad",
+    "sitecore",
+    "spredfast",
+    "strapi",
+    "templafy",
+    "veeva",
+    "videri",
+    "zesty"
+   ],
+   "snake_case": [
+    "amerihealth-caritas",
+    "automattic",
+    "bigtincan",
+    "bloomreach",
+    "box",
+    "bynder",
+    "contentstack",
+    "devoted-health",
+    "django-cms",
+    "duda",
+    "kontent-ai",
+    "newscred",
+    "optimizely",
+    "phrase",
+    "progress-software",
+    "publer",
+    "spredfast",
+    "storyblok",
+    "transifex",
+    "webflow",
+    "webflow-api-and-documentation-webflow",
+    "wpengine"
+   ],
+   "kebab-case": [
+    "acoustic",
+    "atlassian-confluence",
+    "confluence",
+    "spredfast"
+   ],
+   "other": [
+    "plasmic",
+    "progress-software",
+    "storyblok"
+   ],
+   "PascalCase": [
+    "optimizely",
+    "progress-software"
+   ]
+  }
+ }
+}

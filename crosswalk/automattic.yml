@@ -1,0 +1,20 @@
+provider: automattic
+apis_io: https://apis.io/providers/automattic/
+context: cms
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties:
+      id: id
+      name: title
+      created_at: date
+      status: status
+      body: content
+      type: type
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/automattic-jetpack-ai-plugin-openapi.yaml#GET /wpcom/v2/sites/{site_id}/ai-plugin/posts
+    - openapi/_original/automattic-jetpack-ai-plugin-openapi.yaml#GET /wpcom/v2/sites/{site_id}/ai-plugin/posts/{post_id}
+    - openapi/_original/automattic-jetpack-ai-plugin-openapi.yaml#POST /wpcom/v2/sites/{site_id}/ai-plugin/posts

@@ -1,0 +1,48 @@
+provider: atlassian-confluence
+apis_io: https://apis.io/providers/atlassian-confluence/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - pages
+    - page
+    properties:
+      id: id
+      name:
+      - title
+      - name
+      created_at: createdAt
+      parent_id: parentId
+      author_id:
+      - authorId
+      - ownerId
+      body: body
+      description: description
+      status: status
+      template: templateId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/atlassian-confluence-rest-v1-openapi.json#GET /wiki/rest/api/template/page
+    - openapi/_original/atlassian-confluence-rest-v2-openapi.json#DELETE /pages/{id}
+    - openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /labels/{id}/pages
+    - openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /pages
+    - openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /pages/{id}
+  post:
+    path_segment:
+    - blogposts
+    properties:
+      id: id
+      name: title
+      created_at: createdAt
+      status: status
+      body: body
+      tags: labels
+      author_id: authorId
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/atlassian-confluence-rest-v2-openapi.json#DELETE /blogposts/{id}
+    - openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /blogposts
+    - openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /blogposts/{id}
+    - openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /labels/{id}/blogposts
+    - openapi/_original/atlassian-confluence-rest-v2-openapi.json#GET /spaces/{id}/blogposts

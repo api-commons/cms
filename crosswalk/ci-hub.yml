@@ -1,0 +1,22 @@
+provider: ci-hub
+apis_io: https://apis.io/providers/ci-hub/
+context: cms
+generated: '2026-11-10'
+concepts:
+  asset:
+    path_segment:
+    - asset
+    properties:
+      id: id
+      name:
+      - name
+      - title
+      created_at: created
+      updated_at: modified
+      mime_type: mimeType
+      size: fileSize
+      type: type
+      alt_text: caption
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/ci-hub-access-openapi.yml#GET /assets/asset/{assetId}

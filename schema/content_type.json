@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/cms/main/schema/content_type.json",
+  "title": "Content Type",
+  "description": "The common content_type in Content Management, distilled from 6 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "fields": {
+      "type": "array",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.833,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "fields",
+        "schema",
+        "properties",
+        "field_definitions"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "description"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "id",
+        "uid",
+        "contentTypeId"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "created_at",
+        "created"
+      ],
+      "format": "date-time"
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "displayName"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "updated_at",
+        "updated"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "cms",
+    "concept": "content_type",
+    "providers": 6,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

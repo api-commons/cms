@@ -1,0 +1,25 @@
+provider: coda-project
+apis_io: https://apis.io/providers/coda-project/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - pages
+    properties:
+      id: id
+      name: name
+      created_at: createdAt
+      updated_at: updatedAt
+      parent_id:
+      - parent
+      - parentPageId
+      author_id: createdBy
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/docs/{docId}/pages
+    - openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/docs/{docId}/pages/{pageId}
+    - openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/workspaces/{workspaceId}/docs/{docId}/pages
+    - openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/workspaces/{workspaceId}/docs/{docId}/pages/{pageId}
+    - openapi/_original/coda-project-openapi-original.json#DELETE /docs/{docId}/pages/{pageIdOrName}

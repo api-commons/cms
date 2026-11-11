@@ -1,0 +1,34 @@
+provider: orakl
+apis_io: https://apis.io/providers/orakl/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - pages
+    properties:
+      id: '@id'
+      name: title
+      slug: slug
+      type: '@type'
+      published_at: publishedAt
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/orakl-website-openapi-original.json#GET /api/pages
+  post:
+    path_segment:
+    - post
+    properties:
+      id:
+      - '@id'
+      - id
+      name:
+      - name
+      - displayName
+      created_at: createdAt
+      updated_at: updatedAt
+      excerpt: description
+      type: '@type'
+    core_coverage: 0.571
+    evidence:
+    - openapi/_original/orakl-website-openapi-original.json#POST /api/custom_forms/{id}/post

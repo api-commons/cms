@@ -1,0 +1,15 @@
+provider: datocms
+apis_io: https://apis.io/providers/datocms/
+context: cms
+generated: '2026-11-10'
+concepts:
+  asset:
+    path_segment:
+    - uploads
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/datocms-content-management-api.yml#GET /uploads
+    - openapi/_original/datocms-content-management-api.yml#POST /uploads

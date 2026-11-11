@@ -1,0 +1,55 @@
+provider: contentstack
+apis_io: https://apis.io/providers/contentstack/
+context: cms
+generated: '2026-11-10'
+concepts:
+  content_type:
+    path_segment:
+    - content_types
+    properties:
+      fields: schema
+      description: description
+      id: uid
+      created_at: created_at
+      name: title
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /content_types
+    - openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /content_types/{content_type_uid}
+    - openapi/_original/contentstack-content-management-api-openapi.yml#DELETE /content_types/{content_type_uid}
+    - openapi/_original/contentstack-content-management-api-openapi.yml#GET /content_types
+    - openapi/_original/contentstack-content-management-api-openapi.yml#GET /content_types/{content_type_uid}
+  entry:
+    path_segment:
+    - entries
+    properties:
+      id: uid
+      created_at: created_at
+      updated_at: updated_at
+      locale: locale
+      name: title
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /content_types/{content_type_uid}/entries
+    - openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /content_types/{content_type_uid}/entries/{entry_uid}
+    - openapi/_original/contentstack-content-management-api-openapi.yml#DELETE /content_types/{content_type_uid}/entries/{entry_uid}
+    - openapi/_original/contentstack-content-management-api-openapi.yml#GET /content_types/{content_type_uid}/entries
+    - openapi/_original/contentstack-content-management-api-openapi.yml#GET /content_types/{content_type_uid}/entries/{entry_uid}
+  asset:
+    path_segment:
+    - assets
+    properties:
+      id: uid
+      name: title
+      created_at: created_at
+      updated_at: updated_at
+      mime_type: content_type
+      size: file_size
+      filename: filename
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /assets
+    - openapi/_original/contentstack-content-delivery-api-openapi.yml#GET /assets/{asset_uid}
+    - openapi/_original/contentstack-content-management-api-openapi.yml#GET /assets
+    - openapi/_original/contentstack-content-management-api-openapi.yml#POST /assets

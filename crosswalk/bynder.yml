@@ -1,0 +1,33 @@
+provider: bynder
+apis_io: https://apis.io/providers/bynder/
+context: cms
+generated: '2026-11-10'
+concepts:
+  asset:
+    path_segment:
+    - media
+    - asset
+    - assets
+    properties:
+      id:
+      - id
+      - assetId
+      name: name
+      created_at: dateCreated
+      updated_at: dateModified
+      mime_type: fileType
+      size: fileSize
+      description: description
+      type: type
+      status: status
+      tags: tags
+      file_name: fileName
+      asset_type: assetType
+      filename: filename
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/bynder-analytics-openapi.json#GET /v7/analytics/api/v1/asset/{assetId}
+    - openapi/_original/bynder-analytics-openapi.json#GET /v7/analytics/api/v1/report/asset
+    - openapi/_original/bynder-analytics-openapi.json#GET /v7/analytics/api/v1/report/asset/{assetId}
+    - openapi/_original/bynder-antivirus-openapi.json#GET /v7/quarantine/v1/assets
+    - openapi/_original/bynder-antivirus-openapi.json#GET /v7/quarantine/v1/assets/{asset_id}

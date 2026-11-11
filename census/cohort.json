@@ -1,0 +1,640 @@
+[
+ {
+  "slug": "acoustic",
+  "specs": [
+   "openapi/_original/acoustic-content-openapi-original.json",
+   "openapi/_original/acoustic-content-swagger2-original.yaml"
+  ]
+ },
+ {
+  "slug": "acquia",
+  "specs": [
+   "openapi/_original/acquia-cloud-account.yml",
+   "openapi/_original/acquia-cloud-agreements.yml",
+   "openapi/_original/acquia-cloud-application-performance-monitoring-services.yml",
+   "openapi/_original/acquia-cloud-applications.yml",
+   "openapi/_original/acquia-cloud-cloud-ide.yml",
+   "openapi/_original/acquia-cloud-codebases.yml",
+   "openapi/_original/acquia-cloud-current-system-health.yml",
+   "openapi/_original/acquia-cloud-distributions.yml",
+   "openapi/_original/acquia-cloud-email.yml",
+   "openapi/_original/acquia-cloud-environments.yml",
+   "openapi/_original/acquia-cloud-identity-providers.yml",
+   "openapi/_original/acquia-cloud-invite.yml",
+   "openapi/_original/acquia-cloud-messages.yml",
+   "openapi/_original/acquia-cloud-notifications.yml",
+   "openapi/_original/acquia-cloud-openapi-full.yml",
+   "openapi/_original/acquia-cloud-options.yml",
+   "openapi/_original/acquia-cloud-organizations.yml",
+   "openapi/_original/acquia-cloud-private-networks.yml",
+   "openapi/_original/acquia-cloud-subscriptions.yml",
+   "openapi/_original/acquia-cloud-teams-and-permissions.yml"
+  ]
+ },
+ {
+  "slug": "adobe-experience-manager",
+  "specs": [
+   "openapi/_original/adobe-experience-manager-openapi.yml"
+  ]
+ },
+ {
+  "slug": "adonmoprivatelimited",
+  "specs": [
+   "openapi/_original/adonmoprivatelimited-adonmo-api.json",
+   "openapi/_original/adonmoprivatelimited-adonmo-api_2.json"
+  ]
+ },
+ {
+  "slug": "agora-real-estate",
+  "specs": [
+   "openapi/_original/agora-real-estate-wp-json-route-index.json"
+  ]
+ },
+ {
+  "slug": "amerihealth-caritas",
+  "specs": [
+   "openapi/_original/amerihealth-caritas-patient-access-openapi.yml",
+   "openapi/_original/amerihealth-caritas-provider-directory-openapi.yml"
+  ]
+ },
+ {
+  "slug": "atlassian-confluence",
+  "specs": [
+   "openapi/_original/atlassian-confluence-rest-v1-openapi.json",
+   "openapi/_original/atlassian-confluence-rest-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "automattic",
+  "specs": [
+   "openapi/_original/automattic-akismet-openapi.yml",
+   "openapi/_original/automattic-jetpack-ai-plugin-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "bigtincan",
+  "specs": [
+   "openapi/_original/bigtincan-hub-api-openapi.json",
+   "openapi/_original/bigtincan-hub-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "bloomreach",
+  "specs": [
+   "openapi/_original/bloomreach-data-hub-workspace-import-openapi.yml",
+   "openapi/_original/bloomreach-discovery-autosuggest-openapi.yml",
+   "openapi/_original/bloomreach-discovery-bestseller-openapi.yml",
+   "openapi/_original/bloomreach-discovery-catalog-management-openapi.yml",
+   "openapi/_original/bloomreach-discovery-content-search-openapi.yml",
+   "openapi/_original/bloomreach-discovery-email-widget-openapi.yml",
+   "openapi/_original/bloomreach-discovery-recommendations-pathways-openapi.yml",
+   "openapi/_original/bloomreach-discovery-search-category-openapi.yml"
+  ]
+ },
+ {
+  "slug": "box",
+  "specs": [
+   "openapi/_original/box-openapi.json"
+  ]
+ },
+ {
+  "slug": "brandcast",
+  "specs": [
+   "openapi/_original/account.json",
+   "openapi/_original/resources.json",
+   "openapi/_original/salesforce.json",
+   "openapi/_original/templates.json",
+   "openapi/_original/websites.json"
+  ]
+ },
+ {
+  "slug": "bynder",
+  "specs": [
+   "openapi/_original/bynder-access-rights-and-options-v4-openapi.json",
+   "openapi/_original/bynder-access-rights-v4-openapi.json",
+   "openapi/_original/bynder-account-v4-openapi.json",
+   "openapi/_original/bynder-analytics-openapi.json",
+   "openapi/_original/bynder-antivirus-openapi.json",
+   "openapi/_original/bynder-asset-download-openapi.json",
+   "openapi/_original/bynder-asset-upload-openapi.json",
+   "openapi/_original/bynder-asset-upload-steps-test-openapi.json",
+   "openapi/_original/bynder-asset-usage-v4-openapi.json",
+   "openapi/_original/bynder-asset-v4-openapi.json",
+   "openapi/_original/bynder-automation-workflow-openapi.json",
+   "openapi/_original/bynder-automation-workflow-svc-openapi.json",
+   "openapi/_original/bynder-avs-openapi.json",
+   "openapi/_original/bynder-brands-v4-openapi.json",
+   "openapi/_original/bynder-brandstore-openapi.json",
+   "openapi/_original/bynder-collections-v4-openapi.json",
+   "openapi/_original/bynder-dat-openapi.json",
+   "openapi/_original/bynder-derivative-presets-openapi.json",
+   "openapi/_original/bynder-group-asset-uploadtest-openapi.json",
+   "openapi/_original/bynder-groups-v4-openapi.json",
+   "openapi/_original/bynder-metaproperty-options-v4-openapi.json",
+   "openapi/_original/bynder-metaproperty-v4-openapi.json",
+   "openapi/_original/bynder-modern-stack-upload-openapi.json",
+   "openapi/_original/bynder-oauth2-openapi.json",
+   "openapi/_original/bynder-oauthtest2-openapi.json",
+   "openapi/_original/bynder-options-v4-openapi.json",
+   "openapi/_original/bynder-product-layer-v4-openapi.json",
+   "openapi/_original/bynder-securityroles-v4-openapi.json",
+   "openapi/_original/bynder-similar-assets-openapi.json",
+   "openapi/_original/bynder-smartfilter-v4-openapi.json",
+   "openapi/_original/bynder-taxonomy-v1-openapi.json",
+   "openapi/_original/bynder-tea-openapi.json",
+   "openapi/_original/bynder-trash-v4-openapi.json",
+   "openapi/_original/bynder-users-v4-openapi.json",
+   "openapi/_original/bynder-webhooks-openapi.json",
+   "openapi/_original/bynder-wf-campaigns-v4-openapi.json",
+   "openapi/_original/bynder-wf-jobs-v4-openapi.json",
+   "openapi/_original/bynder-wf-metaproperties-v4-openapi.json",
+   "openapi/_original/bynder-wf-users-groups-v4-openapi.json"
+  ]
+ },
+ {
+  "slug": "carbonfarm",
+  "specs": [
+   "openapi/_original/carbonfarm-cms-openapi.json"
+  ]
+ },
+ {
+  "slug": "ceros",
+  "specs": [
+   "openapi/_original/ceros-oembed-openapi.yml",
+   "openapi/_original/ceros-public-api-2026-02-25-openapi.yml",
+   "openapi/_original/ceros-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ci-hub",
+  "specs": [
+   "openapi/_original/ci-hub-access-openapi.yml"
+  ]
+ },
+ {
+  "slug": "clearslide",
+  "specs": [
+   "openapi/_original/clearslide-platform-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "coda-project",
+  "specs": [
+   "openapi/_original/coda-project-admin-openapi-original.json",
+   "openapi/_original/coda-project-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "columbia-sportswear",
+  "specs": [
+   "openapi/_original/columbia-sportswear-content-hub-external-openapi.json",
+   "openapi/_original/columbia-sportswear-content-hub-external-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "confluence",
+  "specs": [
+   "openapi/_original/confluence-cloud-v2.yml",
+   "openapi/_original/confluence-rest-v1-openapi.json",
+   "openapi/_original/confluence-rest-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "contensis",
+  "specs": [
+   "openapi/_original/contensis-openapi.yml"
+  ]
+ },
+ {
+  "slug": "contentful-global",
+  "specs": [
+   "openapi/_original/contentful-experience-openapi.json"
+  ]
+ },
+ {
+  "slug": "contentstack",
+  "specs": [
+   "openapi/_original/contentstack-automate-management-api-openapi.yml",
+   "openapi/_original/contentstack-brand-kit-management-api-openapi.yml",
+   "openapi/_original/contentstack-content-delivery-api-openapi.yml",
+   "openapi/_original/contentstack-content-management-api-openapi.yml",
+   "openapi/_original/contentstack-launch-api-openapi.yml",
+   "openapi/_original/contentstack-personalize-edge-api-openapi.yml",
+   "openapi/_original/contentstack-personalize-management-api-openapi.yml",
+   "openapi/_original/contentstack-scim-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "datocms",
+  "specs": [
+   "openapi/_original/datocms-content-management-api.yml"
+  ]
+ },
+ {
+  "slug": "devoted-health",
+  "specs": [
+   "openapi/_original/devoted-health-patient-access-openapi-original.json",
+   "openapi/_original/devoted-health-patient-access-openapi.json",
+   "openapi/_original/devoted-health-provider-directory-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "django-cms",
+  "specs": [
+   "openapi/_original/djangocms-rest-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dotcms",
+  "specs": [
+   "openapi/_original/dotcms-rest-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "drupal",
+  "specs": [
+   "openapi/_original/drupal-jsonapi-openapi.yml",
+   "openapi/_original/drupal-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "duda",
+  "specs": [
+   "openapi/_original/duda-partner-api.json"
+  ]
+ },
+ {
+  "slug": "dyspatch",
+  "specs": [
+   "openapi/_original/dyspatch-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "ghost-org",
+  "specs": [
+   "openapi/_original/ghost-org-admin-api-openapi.yml",
+   "openapi/_original/ghost-org-content-api-openapi.yml",
+   "openapi/_original/ghost-org-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-blogger",
+  "specs": [
+   "openapi/_original/blogger.yml"
+  ]
+ },
+ {
+  "slug": "independence-blue-cross",
+  "specs": [
+   "openapi/_original/independence-blue-cross-cms-swagger.json",
+   "openapi/_original/independence-blue-cross-formulary-openapi.yml",
+   "openapi/_original/independence-blue-cross-patient-openapi.yml",
+   "openapi/_original/independence-blue-cross-provider-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kontent-ai",
+  "specs": [
+   "openapi/_original/kontent-ai-openapi.yml"
+  ]
+ },
+ {
+  "slug": "later",
+  "specs": [
+   "openapi/_original/later-influence-api-openapi-original.json",
+   "openapi/_original/later-influence-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "makeswift",
+  "specs": [
+   "openapi/_original/makeswift-openapi.json"
+  ]
+ },
+ {
+  "slug": "newscred",
+  "specs": [
+   "openapi/_original/newscred-cmp-open-api-openapi.json",
+   "openapi/_original/newscred-welcome-open-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ninetailed",
+  "specs": [
+   "openapi/_original/ninetailed-experience-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nuxeo",
+  "specs": [
+   "openapi/_original/nuxeo-rest-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "optimizely",
+  "specs": [
+   "openapi/_original/optimizely-campaign-openapi.yml",
+   "openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json",
+   "openapi/_original/optimizely-cmp-openapi.yml",
+   "openapi/_original/optimizely-commerce-service-openapi.yml",
+   "openapi/_original/optimizely-configured-commerce-admin-api-v1-openapi.json",
+   "openapi/_original/optimizely-configured-commerce-storefront-api-v1-openapi.json",
+   "openapi/_original/optimizely-configured-commerce-storefront-api-v2-openapi.json",
+   "openapi/_original/optimizely-content-delivery-openapi.yml",
+   "openapi/_original/optimizely-content-management-openapi.yml",
+   "openapi/_original/optimizely-content-management-system-episervercontentapidocs-openapi.json",
+   "openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json",
+   "openapi/_original/optimizely-data-platform-advanced-openapi.json",
+   "openapi/_original/optimizely-data-platform-consent-openapi.json",
+   "openapi/_original/optimizely-data-platform-customers-openapi.json",
+   "openapi/_original/optimizely-data-platform-events-openapi.json",
+   "openapi/_original/optimizely-data-platform-exports-openapi.json",
+   "openapi/_original/optimizely-data-platform-lists-openapi.json",
+   "openapi/_original/optimizely-data-platform-objects-openapi.json",
+   "openapi/_original/optimizely-data-platform-openapi.yml",
+   "openapi/_original/optimizely-data-platform-orders-openapi.json",
+   "openapi/_original/optimizely-data-platform-products-openapi.json",
+   "openapi/_original/optimizely-data-platform-realtimesegments-openapi.json",
+   "openapi/_original/optimizely-data-platform-recommendations-openapi.json",
+   "openapi/_original/optimizely-digital-experience-platform-episerver-cloud-api-1-openapi.json",
+   "openapi/_original/optimizely-experimentation-data-optimizely-event-api-openapi.json",
+   "openapi/_original/optimizely-feature-experimentation-openapi.yml",
+   "openapi/_original/optimizely-feature-experimentation-optimizely-agent-api-openapi.json",
+   "openapi/_original/optimizely-feature-experimentation-optimizely-feature-experimentation-api-openapi.json",
+   "openapi/_original/optimizely-feature-experimentation-optimizely-flags-scheduling-api-openapi.json",
+   "openapi/_original/optimizely-feature-experimentation-permission-service-openapi.json",
+   "openapi/_original/optimizely-graph-openapi.yml",
+   "openapi/_original/optimizely-performance-edge-optimizely-edge-decider-openapi.json",
+   "openapi/_original/optimizely-platform-optimizely-optimizely-graph-api-openapi.json",
+   "openapi/_original/optimizely-platform-optimizely-swagger-openapi.json",
+   "openapi/_original/optimizely-recommendations-public-api-spec-openapi.yaml",
+   "openapi/_original/optimizely-web-experimentation-openapi.yml",
+   "openapi/_original/optimizely-web-experimentation-optimizely-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "orakl",
+  "specs": [
+   "openapi/_original/orakl-website-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "panopto",
+  "specs": [
+   "openapi/_original/panopto-rest-api.json"
+  ]
+ },
+ {
+  "slug": "payload",
+  "specs": [
+   "openapi/_original/payload-openapi.yml"
+  ]
+ },
+ {
+  "slug": "payloadcms",
+  "specs": [
+   "openapi/_original/payload-authentication-api-openapi.yml",
+   "openapi/_original/payload-collections-api-openapi.yml",
+   "openapi/_original/payload-globals-api-openapi.yml",
+   "openapi/_original/payload-preferences-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "phrase",
+  "specs": [
+   "openapi/_original/phrase-strings-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "plasmic",
+  "specs": [
+   "openapi/_original/plasmic-openapi.yml"
+  ]
+ },
+ {
+  "slug": "progress-software",
+  "specs": [
+   "openapi/_original/progress-software-chef-automate-openapi-original.json",
+   "openapi/_original/progress-software-moveit-transfer-openapi-original.json",
+   "openapi/_original/progress-software-whatsup-gold-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "publer",
+  "specs": [
+   "openapi/_original/publer-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rightsline",
+  "specs": [
+   "openapi/_original/rightsline-openapi.yml"
+  ]
+ },
+ {
+  "slug": "salesforce-experience-cloud",
+  "specs": [
+   "openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml",
+   "openapi/_original/salesforce-experience-cloud-cms-delivery-openapi.yml",
+   "openapi/_original/salesforce-experience-cloud-cms-managed-content-openapi.yml",
+   "openapi/_original/salesforce-experience-cloud-connect-communities-openapi.yml",
+   "openapi/_original/salesforce-experience-cloud-graphql-openapi.yml",
+   "openapi/_original/salesforce-experience-cloud-rest-api-openapi.yml",
+   "openapi/_original/salesforce-experience-cloud-sites-openapi.yml",
+   "openapi/_original/salesforce-experience-cloud-templates-openapi.yml",
+   "openapi/_original/salesforce-experience-cloud-user-interface-openapi.yml"
+  ]
+ },
+ {
+  "slug": "salesforce-marketing-cloud",
+  "specs": [
+   "openapi/_original/salesforce-marketing-cloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sanity",
+  "specs": [
+   "openapi/_original/sanity-openapi.yml"
+  ]
+ },
+ {
+  "slug": "seismic",
+  "specs": [
+   "openapi/_original/seismic-analytics-openapi.yml",
+   "openapi/_original/seismic-content-openapi.yml",
+   "openapi/_original/seismic-livedocs-openapi.yml",
+   "openapi/_original/seismic-user-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "showpad",
+  "specs": [
+   "openapi/_original/showpad-v3-openapi-original.yml",
+   "openapi/_original/showpad-v4-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "sitecore",
+  "specs": [
+   "openapi/_original/sitecore-cdp-rest-api-openapi.yml",
+   "openapi/_original/sitecore-content-hub-rest-api-openapi.yml",
+   "openapi/_original/sitecore-discover-api-openapi.yml",
+   "openapi/_original/sitecore-ordercloud-api-openapi.yml",
+   "openapi/_original/sitecore-personalize-rest-api-openapi.yml",
+   "openapi/_original/sitecore-xm-cloud-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sitefinity-cms",
+  "specs": [
+   "openapi/_original/sitefinity-cms-content-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spekit",
+  "specs": [
+   "openapi/_original/spekit-openapi-original.yml",
+   "openapi/_original/spekit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "spredfast",
+  "specs": [
+   "openapi/_original/spredfast-analytics-api-openapi.json",
+   "openapi/_original/spredfast-analytics-api-openapi.yml",
+   "openapi/_original/spredfast-conversations-api-openapi.json",
+   "openapi/_original/spredfast-conversations-api-v1-openapi.json",
+   "openapi/_original/spredfast-conversations-api-v1-openapi.yml",
+   "openapi/_original/spredfast-crm-api-openapi.json",
+   "openapi/_original/spredfast-crm-api-openapi.yml",
+   "openapi/_original/spredfast-custom-crm-callback-api-openapi.json",
+   "openapi/_original/spredfast-custom-crm-callback-api-openapi.yml",
+   "openapi/_original/spredfast-experiences-stream-api-openapi.json",
+   "openapi/_original/spredfast-experiences-stream-api-openapi.yml",
+   "openapi/_original/spredfast-introspection-api-openapi.json",
+   "openapi/_original/spredfast-introspection-api-openapi.yml",
+   "openapi/_original/spredfast-labelsets-api-openapi.json",
+   "openapi/_original/spredfast-labelsets-api-openapi.yml",
+   "openapi/_original/spredfast-notification-api-openapi.json",
+   "openapi/_original/spredfast-notification-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "storyblok",
+  "specs": [
+   "openapi/_original/storyblok-content-delivery-api-v2-openapi.yml",
+   "openapi/_original/storyblok-image-service-openapi.yml",
+   "openapi/_original/storyblok-management-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "strapi",
+  "specs": [
+   "openapi/_original/strapi-admin-panel-api-openapi.yml",
+   "openapi/_original/strapi-rest-api-openapi.yml",
+   "openapi/_original/strapi-users-and-permissions-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "templafy",
+  "specs": [
+   "openapi/_original/templafy-public-api-v3-openapi.json",
+   "openapi/_original/templafy-public-api-v4-preview-openapi.json"
+  ]
+ },
+ {
+  "slug": "the-picklr",
+  "specs": [
+   "openapi/_original/the-picklr-wordpress-rest-openapi.json"
+  ]
+ },
+ {
+  "slug": "transifex",
+  "specs": [
+   "openapi/_original/transifex-transifex-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "typo3",
+  "specs": [
+   "openapi/_original/typo3-releases-openapi.json"
+  ]
+ },
+ {
+  "slug": "uniform",
+  "specs": [
+   "openapi/_original/uniform-platform-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "veeva",
+  "specs": [
+   "openapi/_original/veeva-vault-openapi.yml"
+  ]
+ },
+ {
+  "slug": "videri",
+  "specs": [
+   "openapi/_original/videri-canvas-service.json",
+   "openapi/_original/videri-messaging-websocket.json",
+   "openapi/_original/videri-rpm-service.json"
+  ]
+ },
+ {
+  "slug": "webflow",
+  "specs": [
+   "openapi/_original/webflow-assets-openapi.yml",
+   "openapi/_original/webflow-collections-openapi.yml",
+   "openapi/_original/webflow-comments-openapi.yml",
+   "openapi/_original/webflow-components-openapi.yml",
+   "openapi/_original/webflow-custom-code-openapi.yml",
+   "openapi/_original/webflow-data-api-openapi.yml",
+   "openapi/_original/webflow-ecommerce-settings-openapi.yml",
+   "openapi/_original/webflow-forms-openapi.yml",
+   "openapi/_original/webflow-inventory-openapi.yml",
+   "openapi/_original/webflow-items-openapi.yml",
+   "openapi/_original/webflow-meta-openapi.yml",
+   "openapi/_original/webflow-orders-openapi.yml",
+   "openapi/_original/webflow-pages-openapi.yml",
+   "openapi/_original/webflow-products-openapi.yml",
+   "openapi/_original/webflow-sites-openapi.yml",
+   "openapi/_original/webflow-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "webflow-api-and-documentation-webflow",
+  "specs": [
+   "openapi/_original/webflow-collections-openapi.yml",
+   "openapi/_original/webflow-data-api-openapi.yml",
+   "openapi/_original/webflow-items-openapi.yml",
+   "openapi/_original/webflow-sites-openapi.yml",
+   "openapi/_original/webflow-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wix",
+  "specs": [
+   "openapi/_original/wix-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wpengine",
+  "specs": [
+   "openapi/_original/wpengine-hosting-platform-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "yodeck-signage",
+  "specs": [
+   "openapi/_original/yodeck-signage-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zesty",
+  "specs": [
+   "openapi/_original/zesty-accounts-api-openapi.yml",
+   "openapi/_original/zesty-auth-api-openapi.yml",
+   "openapi/_original/zesty-media-api-openapi.yml"
+  ]
+ }
+]

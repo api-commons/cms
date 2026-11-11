@@ -1,0 +1,24 @@
+provider: dotcms
+apis_io: https://apis.io/providers/dotcms/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - page
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/dotcms-rest-api-openapi.json#GET /api/v1/contenttype/page
+  asset:
+    path_segment:
+    - assets
+    - asset
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/dotcms-rest-api-openapi.json#DELETE /api/v1/bundles/{bundleId}/assets
+    - openapi/_original/dotcms-rest-api-openapi.json#GET /api/bundle/{bundleId}/assets
+    - openapi/_original/dotcms-rest-api-openapi.json#GET /api/v2/assets
+    - openapi/_original/dotcms-rest-api-openapi.json#GET /api/v2/assets/{identifier}
+    - openapi/_original/dotcms-rest-api-openapi.json#POST /api/v1/assets

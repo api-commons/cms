@@ -1,0 +1,57 @@
+aid: common-cms
+name: Content Management
+type: Common
+description: 'The common Content Management vocabulary, distilled from the harvested OpenAPI of 73 providers in
+  APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names
+  to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Content Management
+- Headless CMS
+- CMS
+- Content Management System
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/cms/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-cms:cms
+  name: Common Content Management Interface
+  description: The Content Management interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/cms
+  tags:
+  - Content Management
+  - Headless CMS
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/cms/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/cms/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/cms/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: content_type
+    url: https://raw.githubusercontent.com/api-commons/cms/main/schema/content_type.json
+  - type: JSONSchema
+    name: entry
+    url: https://raw.githubusercontent.com/api-commons/cms/main/schema/entry.json
+  - type: JSONSchema
+    name: page
+    url: https://raw.githubusercontent.com/api-commons/cms/main/schema/page.json
+  - type: JSONSchema
+    name: post
+    url: https://raw.githubusercontent.com/api-commons/cms/main/schema/post.json
+  - type: JSONSchema
+    name: asset
+    url: https://raw.githubusercontent.com/api-commons/cms/main/schema/asset.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/cms/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

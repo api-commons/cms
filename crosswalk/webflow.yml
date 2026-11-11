@@ -1,0 +1,54 @@
+provider: webflow
+apis_io: https://apis.io/providers/webflow/
+context: cms
+generated: '2026-11-10'
+concepts:
+  entry:
+    path_segment:
+    - items
+    properties:
+      id: id
+      created_at: createdOn
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/webflow-data-api-openapi.yml#DELETE /collections/{collection_id}/items
+    - openapi/_original/webflow-data-api-openapi.yml#DELETE /collections/{collection_id}/items/{item_id}
+    - openapi/_original/webflow-data-api-openapi.yml#GET /collections/{collection_id}/items
+    - openapi/_original/webflow-data-api-openapi.yml#GET /collections/{collection_id}/items/{item_id}
+    - openapi/_original/webflow-data-api-openapi.yml#PATCH /collections/{collection_id}/items
+  page:
+    path_segment:
+    - pages
+    properties:
+      id: id
+      name: title
+      created_at: createdOn
+      slug: slug
+      parent_id: parentId
+      seo_title: seo
+      site_id: siteId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/webflow-data-api-openapi.yml#GET /pages/{page_id}
+    - openapi/_original/webflow-data-api-openapi.yml#GET /sites/{site_id}/pages
+    - openapi/_original/webflow-data-api-openapi.yml#PUT /pages/{page_id}
+    - openapi/_original/webflow-pages-openapi.yml#GET /pages/{page_id}
+    - openapi/_original/webflow-pages-openapi.yml#GET /sites/{site_id}/pages
+  asset:
+    path_segment:
+    - assets
+    properties:
+      id: id
+      name: displayName
+      created_at: createdOn
+      mime_type: contentType
+      size: size
+      alt_text: altText
+      file_name: fileName
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/webflow-assets-openapi.yml#DELETE /assets/{asset_id}
+    - openapi/_original/webflow-assets-openapi.yml#GET /assets/{asset_id}
+    - openapi/_original/webflow-assets-openapi.yml#GET /sites/{site_id}/assets
+    - openapi/_original/webflow-assets-openapi.yml#PATCH /assets/{asset_id}
+    - openapi/_original/webflow-assets-openapi.yml#POST /sites/{site_id}/assets

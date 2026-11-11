@@ -1,0 +1,24 @@
+provider: templafy
+apis_io: https://apis.io/providers/templafy/
+context: cms
+generated: '2026-11-10'
+concepts:
+  asset:
+    path_segment:
+    - assets
+    properties:
+      id: id
+      name: name
+      updated_at: modifiedAt
+      mime_type: mimeType
+      size: fileSize
+      description: description
+      tags: tags
+      asset_type: assetType
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/documents/assets/{assetId}
+    - openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/email-elements/assets/{assetId}
+    - openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/images/assets/{assetId}
+    - openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/links/assets/{assetId}
+    - openapi/_original/templafy-public-api-v3-openapi.json#DELETE /libraries/{spaceId}/pdfs/assets/{assetId}

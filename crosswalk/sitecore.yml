@@ -1,0 +1,24 @@
+provider: sitecore
+apis_io: https://apis.io/providers/sitecore/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - pages
+    properties:
+      id: id
+      name:
+      - name
+      - displayName
+      slug: path
+      parent_id: parentId
+      locale: language
+      site_id: siteId
+      template: templateId
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/sitecore-xm-cloud-rest-api-openapi.yml#DELETE /api/v1/pages/{pageId}
+    - openapi/_original/sitecore-xm-cloud-rest-api-openapi.yml#GET /api/v1/pages
+    - openapi/_original/sitecore-xm-cloud-rest-api-openapi.yml#GET /api/v1/pages/{pageId}
+    - openapi/_original/sitecore-xm-cloud-rest-api-openapi.yml#POST /api/v1/pages

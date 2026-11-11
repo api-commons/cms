@@ -1,0 +1,49 @@
+provider: acoustic
+apis_io: https://apis.io/providers/acoustic/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - pages
+    properties:
+      id: id
+      name:
+      - name
+      - title
+      created_at: created
+      updated_at: lastModified
+      parent_id: parentId
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/acoustic-content-openapi-original.json#DELETE /authoring/v1/sites/{site-id}/pages/{page-id}
+    - openapi/_original/acoustic-content-openapi-original.json#GET /authoring/v1/sites/pages/{page-id}
+    - openapi/_original/acoustic-content-openapi-original.json#GET /authoring/v1/sites/{site-id}/pages
+    - openapi/_original/acoustic-content-openapi-original.json#GET /authoring/v1/sites/{site-id}/pages/{page-id}
+    - openapi/_original/acoustic-content-openapi-original.json#GET /delivery/v1/sites/{siteId}/pages/{pageId}
+  asset:
+    path_segment:
+    - assets
+    properties:
+      id: id
+      name: name
+      created_at: created
+      updated_at: lastModified
+      size: fileSize
+      description: description
+      alt_text:
+      - altText
+      - caption
+      status: status
+      tags: tags
+      file_name: fileName
+      asset_type: assetType
+      slug: path
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/acoustic-content-openapi-original.json#DELETE /authoring/v1/assets/{id}
+    - openapi/_original/acoustic-content-openapi-original.json#GET /authoring/v1/assets
+    - openapi/_original/acoustic-content-openapi-original.json#GET /authoring/v1/assets/{id}
+    - openapi/_original/acoustic-content-openapi-original.json#POST /authoring/v1/assets
+    - openapi/_original/acoustic-content-openapi-original.json#PUT /authoring/v1/assets/{id}

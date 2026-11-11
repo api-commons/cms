@@ -1,0 +1,41 @@
+provider: google-blogger
+apis_io: https://apis.io/providers/google-blogger/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - pages
+    properties:
+      id: id
+      name: title
+      updated_at: updated
+      author_id: author
+      body: content
+      status:
+      - published
+      - status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/blogger.yml#GET /blogs/{blogId}/pages
+    - openapi/_original/blogger.yml#POST /blogs/{blogId}/pages
+  post:
+    path_segment:
+    - posts
+    properties:
+      id: id
+      name: title
+      status:
+      - published
+      - status
+      body: content
+      tags: labels
+      updated_at: updated
+      author_id: author
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/blogger.yml#DELETE /blogs/{blogId}/posts/{postId}
+    - openapi/_original/blogger.yml#GET /blogs/{blogId}/posts
+    - openapi/_original/blogger.yml#GET /blogs/{blogId}/posts/{postId}
+    - openapi/_original/blogger.yml#PATCH /blogs/{blogId}/posts/{postId}
+    - openapi/_original/blogger.yml#POST /blogs/{blogId}/posts

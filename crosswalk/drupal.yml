@@ -1,0 +1,28 @@
+provider: drupal
+apis_io: https://apis.io/providers/drupal/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - page
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/drupal-jsonapi-openapi.yml#GET /node/page
+    - openapi/_original/drupal-jsonapi-openapi.yml#GET /node/page/{uuid}
+  post:
+    path_segment:
+    - article
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.143
+    evidence:
+    - openapi/_original/drupal-jsonapi-openapi.yml#DELETE /node/article/{uuid}
+    - openapi/_original/drupal-jsonapi-openapi.yml#GET /node/article
+    - openapi/_original/drupal-jsonapi-openapi.yml#GET /node/article/{uuid}
+    - openapi/_original/drupal-jsonapi-openapi.yml#PATCH /node/article/{uuid}
+    - openapi/_original/drupal-jsonapi-openapi.yml#POST /node/article

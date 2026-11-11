@@ -1,0 +1,40 @@
+provider: storyblok
+apis_io: https://apis.io/providers/storyblok/
+context: cms
+generated: '2026-11-10'
+concepts:
+  entry:
+    path_segment:
+    - stories
+    properties:
+      id:
+      - id
+      - uuid
+      created_at: created_at
+      updated_at: updated_at
+      name: name
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/storyblok-content-delivery-api-v2-openapi.yml#GET /stories
+    - openapi/_original/storyblok-content-delivery-api-v2-openapi.yml#GET /stories/{id}
+    - openapi/_original/storyblok-content-delivery-api-v2-openapi.yml#GET /stories/{slug}
+    - openapi/_original/storyblok-management-api-openapi.yml#DELETE /spaces/{space_id}/stories/{story_id}
+    - openapi/_original/storyblok-management-api-openapi.yml#GET /spaces/{space_id}/stories
+  asset:
+    path_segment:
+    - assets
+    properties:
+      id: id
+      name: title
+      created_at: created_at
+      updated_at: updated_at
+      mime_type: content_type
+      size: size
+      alt_text: alt
+      filename: filename
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/storyblok-management-api-openapi.yml#DELETE /spaces/{space_id}/assets/{asset_id}
+    - openapi/_original/storyblok-management-api-openapi.yml#GET /spaces/{space_id}/assets
+    - openapi/_original/storyblok-management-api-openapi.yml#GET /spaces/{space_id}/assets/{asset_id}
+    - openapi/_original/storyblok-management-api-openapi.yml#POST /spaces/{space_id}/assets

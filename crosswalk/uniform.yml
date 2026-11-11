@@ -1,0 +1,44 @@
+provider: uniform
+apis_io: https://apis.io/providers/uniform/
+context: cms
+generated: '2026-11-10'
+concepts:
+  content_type:
+    path_segment:
+    - content-types
+    properties:
+      fields: fields
+      description: description
+      id:
+      - id
+      - contentTypeId
+      created_at: created
+      name: name
+      updated_at: updated
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/uniform-platform-api-openapi.json#DELETE /api/v1/content-types
+    - openapi/_original/uniform-platform-api-openapi.json#GET /api/v1/content-types
+    - openapi/_original/uniform-platform-api-openapi.json#PUT /api/v1/content-types
+  entry:
+    path_segment:
+    - entries
+    properties:
+      id: entryId
+      created_at: created
+      updated_at: modified
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/uniform-platform-api-openapi.json#DELETE /api/v1/entries
+    - openapi/_original/uniform-platform-api-openapi.json#GET /api/v1/entries
+    - openapi/_original/uniform-platform-api-openapi.json#PUT /api/v1/entries
+  asset:
+    path_segment:
+    - assets
+    properties:
+      id: assetId
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/uniform-platform-api-openapi.json#DELETE /api/v1/assets
+    - openapi/_original/uniform-platform-api-openapi.json#GET /api/v1/assets
+    - openapi/_original/uniform-platform-api-openapi.json#PUT /api/v1/assets

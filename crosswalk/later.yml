@@ -1,0 +1,20 @@
+provider: later
+apis_io: https://apis.io/providers/later/
+context: cms
+generated: '2026-11-10'
+concepts:
+  asset:
+    path_segment:
+    - assets
+    properties:
+      id: id
+      name: name
+      type: type
+      status: status
+      slug: handle
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/later-influence-api-openapi-original.json#GET /v2/marketers/meta/business/assets
+    - openapi/_original/later-influence-api-openapi-original.json#PATCH /v2/marketers/meta/business/assets/{id}
+    - openapi/_original/later-influence-api-openapi.json#GET /v2/marketers/meta/business/assets
+    - openapi/_original/later-influence-api-openapi.json#PATCH /v2/marketers/meta/business/assets/{id}

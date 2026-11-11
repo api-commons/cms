@@ -1,0 +1,29 @@
+provider: spredfast
+apis_io: https://apis.io/providers/spredfast/
+context: cms
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/spredfast-analytics-api-openapi.json#POST /export/posts
+    - openapi/_original/spredfast-analytics-api-openapi.yml#POST /export/posts
+  asset:
+    path_segment:
+    - asset
+    - assets
+    properties:
+      id: id
+      name: name
+      created_at: createdDate
+      description: description
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/spredfast-conversations-api-openapi.json#GET /conversations/asset/{assetId}
+    - openapi/_original/spredfast-conversations-api-openapi.json#GET /conversations/folder/{folderId}/assets
+    - openapi/_original/spredfast-conversations-api-openapi.json#POST /conversations/asset
+    - openapi/_original/spredfast-conversations-api-openapi.json#PUT /conversations/asset/{assetId}
+    - openapi/_original/spredfast-conversations-api-v1-openapi.json#GET /{environment}/v1/company/{companyId}/asset/{assetId}

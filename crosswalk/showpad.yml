@@ -1,0 +1,26 @@
+provider: showpad
+apis_io: https://apis.io/providers/showpad/
+context: cms
+generated: '2026-11-10'
+concepts:
+  asset:
+    path_segment:
+    - assets
+    properties:
+      id: id
+      name: name
+      created_at: createdAt
+      updated_at: updatedAt
+      size: size
+      description: description
+      type: type
+      status: status
+      tags: tags
+      slug: slug
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/showpad-v3-openapi-original.yml#DELETE /assets/{id}.json
+    - openapi/_original/showpad-v3-openapi-original.yml#GET /assets.json
+    - openapi/_original/showpad-v3-openapi-original.yml#GET /assets/{id}.json
+    - openapi/_original/showpad-v3-openapi-original.yml#GET /channels/{id}/assets.json
+    - openapi/_original/showpad-v3-openapi-original.yml#GET /divisions/{id}/assets.json

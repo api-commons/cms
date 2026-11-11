@@ -1,0 +1,15 @@
+provider: strapi
+apis_io: https://apis.io/providers/strapi/
+context: cms
+generated: '2026-11-10'
+concepts:
+  content_type:
+    path_segment:
+    - content-types
+    properties:
+      fields: schema
+      id: uid
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/strapi-admin-panel-api-openapi.yml#GET /admin/content-type-builder/content-types
+    - openapi/_original/strapi-admin-panel-api-openapi.yml#GET /admin/content-type-builder/content-types/{uid}

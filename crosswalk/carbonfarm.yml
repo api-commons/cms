@@ -1,0 +1,26 @@
+provider: carbonfarm
+apis_io: https://apis.io/providers/carbonfarm/
+context: cms
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - post
+    properties:
+      name: title
+      created_at: date_created
+      status: status
+      body: content
+      excerpt: description
+      type: type
+    core_coverage: 0.571
+    evidence:
+    - openapi/_original/carbonfarm-cms-openapi.json#GET /items/post
+    - openapi/_original/carbonfarm-cms-openapi.json#GET /items/post/{id}
+  asset:
+    path_segment:
+    - assets
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/carbonfarm-cms-openapi.json#GET /assets/{id}

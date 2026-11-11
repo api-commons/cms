@@ -1,0 +1,18 @@
+provider: django-cms
+apis_io: https://apis.io/providers/django-cms/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - pages
+    properties:
+      name: label
+      body:
+      - content
+      - html
+      locale: language
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/djangocms-rest-openapi.yml#GET /{language}/pages/
+    - openapi/_original/djangocms-rest-openapi.yml#GET /{language}/pages/{path}/

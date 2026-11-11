@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/cms/main/schema/page.json",
+  "title": "Page",
+  "description": "The common page in Content Management, distilled from 14 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.929,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "id",
+        "uuid",
+        "pageId",
+        "@id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.929,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "title",
+        "name",
+        "label",
+        "displayName"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "createdAt",
+        "created",
+        "createdOn",
+        "created_at"
+      ],
+      "format": "date-time"
+    },
+    "slug": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.429,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "slug",
+        "path"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.429,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "updatedAt",
+        "lastModified",
+        "updated_at",
+        "updated",
+        "last_modified"
+      ],
+      "format": "date-time"
+    },
+    "parent_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.357,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "parentId",
+        "parent",
+        "parentPageId"
+      ]
+    },
+    "author_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.286,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "createdBy",
+        "authorId",
+        "ownerId",
+        "author"
+      ]
+    },
+    "body": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.286,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "content",
+        "html",
+        "body"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.286,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "description",
+        "excerpt"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.286,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "type",
+        "@type"
+      ]
+    },
+    "locale": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "language",
+        "locale"
+      ]
+    },
+    "published_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "publishedAt",
+        "published_at"
+      ],
+      "format": "date-time"
+    },
+    "seo_title": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "seo",
+        "meta_title"
+      ]
+    },
+    "site_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "siteId"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "status",
+        "published"
+      ]
+    },
+    "template": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.214,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "templateId"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "cms",
+    "concept": "page",
+    "providers": 14,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

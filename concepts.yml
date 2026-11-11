@@ -1,0 +1,88 @@
+context: cms
+name: Content Management
+intro: >-
+  The common content-management vocabulary -- the content types that define structure, the
+  entries written against them, the pages and posts a site publishes, the media assets they
+  embed and the locales they are translated into -- distilled from the APIs that already exist.
+tags: [Content Management, Headless CMS, CMS, Content Management System, Web Content Management, Digital Experience Platform]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, items, sys]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, _id, document_id, entry_id, uid]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, date, first_published_at]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified, date_modified_gmt, modified_gmt]
+  metadata: [meta_data, custom_fields, custom, attributes, properties, meta]
+  status: [state, workflow_state, publish_status, published, is_published, stage]
+  name: [title, display_name, label, headline]
+  description: [summary, excerpt, notes, note]
+  slug: [handle, url_slug, path, uri, permalink, full_slug]
+  locale: [language, lang, language_code, locale_code]
+  author_id: [author, created_by, creator, owner_id, user_id]
+  published_at: [publish_date, published_date, date_published, go_live_at, first_published_at, date_gmt]
+
+concepts:
+  content_type:
+    segments: [content_types, content-types, contenttypes, content_models, models@content|cms, schemas@content|cms, collections@cms|content, components@cms|content]
+    aliases:
+      fields: [field_definitions, attributes, schema, properties]
+      api_id: [api_key, key, singular_name, apiId]
+  entry:
+    segments: [entries, entry, items@collections|content_types|models, documents@collections|content, content@cms|spaces, stories, records@collections]
+    aliases:
+      content_type_id: [content_type, model, model_id, type, collection_id, schema_id, component]
+      fields: [content, data, body, values, attributes]
+      version: [revision, version_number]
+  page:
+    segments: [pages, page, site_pages, landing_pages]
+    aliases:
+      body: [content, html, body_html, blocks]
+      template: [template_id, layout, page_template]
+      parent_id: [parent, parent_page_id]
+      seo_title: [meta_title, html_title, seo]
+  post:
+    segments: [posts, post, articles, article, blog_posts, blog-posts, blogposts]
+    aliases:
+      body: [content, html, body_html, post_body, rendered]
+      excerpt: [summary, description, teaser, meta_description]
+      tags: [tag_ids, labels]
+      categories: [category_ids, category]
+      featured_image: [featured_media, cover_image, image, thumbnail, feature_image, hero_image]
+  asset:
+    segments: [assets, asset, media, uploads, files@cms|content|media, images@media]
+    aliases:
+      url: [source_url, src, file_url, download_url, link]
+      mime_type: [content_type, mime, file_type, format]
+      size: [file_size, bytes, filesize]
+      alt_text: [alt, caption, alternative_text]
+      width: [image_width]
+      height: [image_height]
+  # locale was measured and dropped: 1 provider exposes locales as a resource.
+
+exclude:
+  entry:
+    box: /collections/{id}/items are files in a Box collection
+    bigtincan: /search/stories is a search endpoint
+duplicates:
+  atlassian-confluence: [confluence]
+  webflow: [webflow-api-and-documentation-webflow]
+  optimizely: [newscred]
+
+findings:
+  - "A post agrees on id, title, status, body, tags and dates: WordPress set the shape of a blog
+    post and the rest of the market kept it."
+  - "An asset agrees only on id, name and dates; MIME type falls just short. A CMS asset is a
+    file, but CMSs describe the bytes less consistently than storage APIs do."
+  - "Headless CMS is barely represented (6 providers each for content types and entries):
+    the leading headless platforms either publish GraphQL or no OpenAPI the catalog holds."
+decisions:
+  - "Content and Publishing are not cohort tags: they cover media companies and news as much
+    as content-management software."
+  - "A page and a post are separate concepts: pages are a site's structure, posts its
+    chronological content, and the measured cores differ."
+  - "Stories (Storyblok) and items beneath a collection (Webflow) are entries; Box's collection
+    items are files and excluded."
+  - "Articles and blog posts are posts."
+  - "Duplicates merged: Confluence, Webflow, NewsCred into Optimizely."

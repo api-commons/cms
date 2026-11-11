@@ -1,0 +1,19 @@
+provider: yodeck-signage
+apis_io: https://apis.io/providers/yodeck-signage/
+context: cms
+generated: '2026-11-10'
+concepts:
+  asset:
+    path_segment:
+    - media
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/yodeck-signage-openapi.yml#DELETE /media/{id}/
+    - openapi/_original/yodeck-signage-openapi.yml#GET /media/
+    - openapi/_original/yodeck-signage-openapi.yml#GET /media/{id}/
+    - openapi/_original/yodeck-signage-openapi.yml#PATCH /media/{id}/
+    - openapi/_original/yodeck-signage-openapi.yml#POST /media/

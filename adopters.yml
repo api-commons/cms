@@ -1,0 +1,208 @@
+context: cms
+generated: '2026-11-10'
+adopters:
+- provider: acoustic
+  apis_io: https://apis.io/providers/acoustic/
+  crosswalk: crosswalk/acoustic.yml
+  concepts:
+  - asset
+  - page
+- provider: atlassian-confluence
+  apis_io: https://apis.io/providers/atlassian-confluence/
+  crosswalk: crosswalk/atlassian-confluence.yml
+  concepts:
+  - page
+  - post
+- provider: automattic
+  apis_io: https://apis.io/providers/automattic/
+  crosswalk: crosswalk/automattic.yml
+  concepts:
+  - post
+- provider: bynder
+  apis_io: https://apis.io/providers/bynder/
+  crosswalk: crosswalk/bynder.yml
+  concepts:
+  - asset
+- provider: carbonfarm
+  apis_io: https://apis.io/providers/carbonfarm/
+  crosswalk: crosswalk/carbonfarm.yml
+  concepts:
+  - asset
+  - post
+- provider: ceros
+  apis_io: https://apis.io/providers/ceros/
+  crosswalk: crosswalk/ceros.yml
+  concepts:
+  - page
+- provider: ci-hub
+  apis_io: https://apis.io/providers/ci-hub/
+  crosswalk: crosswalk/ci-hub.yml
+  concepts:
+  - asset
+- provider: coda-project
+  apis_io: https://apis.io/providers/coda-project/
+  crosswalk: crosswalk/coda-project.yml
+  concepts:
+  - page
+- provider: contensis
+  apis_io: https://apis.io/providers/contensis/
+  crosswalk: crosswalk/contensis.yml
+  concepts:
+  - content_type
+  - entry
+- provider: contentstack
+  apis_io: https://apis.io/providers/contentstack/
+  crosswalk: crosswalk/contentstack.yml
+  concepts:
+  - asset
+  - content_type
+  - entry
+- provider: datocms
+  apis_io: https://apis.io/providers/datocms/
+  crosswalk: crosswalk/datocms.yml
+  concepts:
+  - asset
+- provider: django-cms
+  apis_io: https://apis.io/providers/django-cms/
+  crosswalk: crosswalk/django-cms.yml
+  concepts:
+  - page
+- provider: dotcms
+  apis_io: https://apis.io/providers/dotcms/
+  crosswalk: crosswalk/dotcms.yml
+  concepts:
+  - asset
+  - page
+- provider: drupal
+  apis_io: https://apis.io/providers/drupal/
+  crosswalk: crosswalk/drupal.yml
+  concepts:
+  - page
+  - post
+- provider: duda
+  apis_io: https://apis.io/providers/duda/
+  crosswalk: crosswalk/duda.yml
+  concepts:
+  - page
+- provider: ghost-org
+  apis_io: https://apis.io/providers/ghost-org/
+  crosswalk: crosswalk/ghost-org.yml
+  concepts:
+  - page
+  - post
+- provider: google-blogger
+  apis_io: https://apis.io/providers/google-blogger/
+  crosswalk: crosswalk/google-blogger.yml
+  concepts:
+  - page
+  - post
+- provider: later
+  apis_io: https://apis.io/providers/later/
+  crosswalk: crosswalk/later.yml
+  concepts:
+  - asset
+- provider: makeswift
+  apis_io: https://apis.io/providers/makeswift/
+  crosswalk: crosswalk/makeswift.yml
+  concepts:
+  - page
+- provider: optimizely
+  apis_io: https://apis.io/providers/optimizely/
+  crosswalk: crosswalk/optimizely.yml
+  concepts:
+  - asset
+  - content_type
+  - entry
+  - page
+  - post
+- provider: orakl
+  apis_io: https://apis.io/providers/orakl/
+  crosswalk: crosswalk/orakl.yml
+  concepts:
+  - page
+  - post
+- provider: phrase
+  apis_io: https://apis.io/providers/phrase/
+  crosswalk: crosswalk/phrase.yml
+  concepts:
+  - asset
+- provider: publer
+  apis_io: https://apis.io/providers/publer/
+  crosswalk: crosswalk/publer.yml
+  concepts:
+  - asset
+  - post
+- provider: salesforce-experience-cloud
+  apis_io: https://apis.io/providers/salesforce-experience-cloud/
+  crosswalk: crosswalk/salesforce-experience-cloud.yml
+  concepts:
+  - asset
+  - content_type
+- provider: salesforce-marketing-cloud
+  apis_io: https://apis.io/providers/salesforce-marketing-cloud/
+  crosswalk: crosswalk/salesforce-marketing-cloud.yml
+  concepts:
+  - asset
+- provider: showpad
+  apis_io: https://apis.io/providers/showpad/
+  crosswalk: crosswalk/showpad.yml
+  concepts:
+  - asset
+- provider: sitecore
+  apis_io: https://apis.io/providers/sitecore/
+  crosswalk: crosswalk/sitecore.yml
+  concepts:
+  - page
+- provider: sitefinity-cms
+  apis_io: https://apis.io/providers/sitefinity-cms/
+  crosswalk: crosswalk/sitefinity-cms.yml
+  concepts:
+  - post
+- provider: spredfast
+  apis_io: https://apis.io/providers/spredfast/
+  crosswalk: crosswalk/spredfast.yml
+  concepts:
+  - asset
+  - post
+- provider: storyblok
+  apis_io: https://apis.io/providers/storyblok/
+  crosswalk: crosswalk/storyblok.yml
+  concepts:
+  - asset
+  - entry
+- provider: strapi
+  apis_io: https://apis.io/providers/strapi/
+  crosswalk: crosswalk/strapi.yml
+  concepts:
+  - content_type
+- provider: templafy
+  apis_io: https://apis.io/providers/templafy/
+  crosswalk: crosswalk/templafy.yml
+  concepts:
+  - asset
+- provider: the-picklr
+  apis_io: https://apis.io/providers/the-picklr/
+  crosswalk: crosswalk/the-picklr.yml
+  concepts:
+  - asset
+  - page
+  - post
+- provider: uniform
+  apis_io: https://apis.io/providers/uniform/
+  crosswalk: crosswalk/uniform.yml
+  concepts:
+  - asset
+  - content_type
+  - entry
+- provider: webflow
+  apis_io: https://apis.io/providers/webflow/
+  crosswalk: crosswalk/webflow.yml
+  concepts:
+  - asset
+  - entry
+  - page
+- provider: yodeck-signage
+  apis_io: https://apis.io/providers/yodeck-signage/
+  crosswalk: crosswalk/yodeck-signage.yml
+  concepts:
+  - asset

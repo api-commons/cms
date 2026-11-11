@@ -1,0 +1,33 @@
+provider: publer
+apis_io: https://apis.io/providers/publer/
+context: cms
+generated: '2026-11-10'
+concepts:
+  post:
+    path_segment:
+    - posts
+    properties:
+      id: id
+      created_at: created_at
+      status: state
+      tags: labels
+      updated_at: updated_at
+      type: type
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/publer-openapi.yml#DELETE /posts
+    - openapi/_original/publer-openapi.yml#GET /posts
+    - openapi/_original/publer-openapi.yml#PUT /posts/{id}
+  asset:
+    path_segment:
+    - media
+    properties:
+      id: id
+      name: name
+      type: type
+      alt_text: caption
+      slug: path
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/publer-openapi.yml#GET /media
+    - openapi/_original/publer-openapi.yml#POST /media

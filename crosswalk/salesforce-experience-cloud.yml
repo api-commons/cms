@@ -1,0 +1,27 @@
+provider: salesforce-experience-cloud
+apis_io: https://apis.io/providers/salesforce-experience-cloud/
+context: cms
+generated: '2026-11-10'
+concepts:
+  content_type:
+    path_segment:
+    - content-types
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#GET /content-types
+  asset:
+    path_segment:
+    - media
+    properties:
+      id: id
+      name: title
+      mime_type: mimeType
+      alt_text: altText
+      file_name: fileName
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#DELETE /media/{mediaId}
+    - openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#GET /media
+    - openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#GET /media/{mediaId}
+    - openapi/_original/salesforce-experience-cloud-cms-connect-openapi.yml#POST /media

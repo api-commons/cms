@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/cms/main/schema/asset.json",
+  "title": "Asset",
+  "description": "The common asset in Content Management, distilled from 19 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.947,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "id",
+        "assetId",
+        "uid"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.789,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "name",
+        "title",
+        "displayName"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.632,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "created_at",
+        "created",
+        "createdDate",
+        "dateCreated",
+        "createdAt",
+        "createdOn"
+      ],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.526,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "updated_at",
+        "lastModified",
+        "dateModified",
+        "modified",
+        "modified_at",
+        "modifiedDate",
+        "updatedAt",
+        "modifiedAt"
+      ],
+      "format": "date-time"
+    },
+    "mime_type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.474,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "mimeType",
+        "content_type",
+        "fileType",
+        "mime_type",
+        "format",
+        "contentType"
+      ]
+    },
+    "size": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.474,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "fileSize",
+        "size",
+        "file_size"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.421,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "description",
+        "summary"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.368,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "type"
+      ]
+    },
+    "alt_text": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.316,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "altText",
+        "caption",
+        "alt"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.316,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.316,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "tags"
+      ]
+    },
+    "file_name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.263,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "fileName",
+        "file_name"
+      ]
+    },
+    "asset_type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.211,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "assetType"
+      ]
+    },
+    "filename": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.211,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "filename"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.211,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "path",
+        "handle",
+        "slug"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "cms",
+    "concept": "asset",
+    "providers": 19,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

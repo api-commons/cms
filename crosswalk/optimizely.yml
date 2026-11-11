@@ -1,0 +1,118 @@
+provider: optimizely
+apis_io: https://apis.io/providers/optimizely/
+context: cms
+generated: '2026-11-10'
+concepts:
+  content_type:
+    path_segment:
+    - content-types
+    - contenttypes
+    properties:
+      fields:
+      - properties
+      - field_definitions
+      description: description
+      created_at:
+      - created_at
+      - created
+      name:
+      - name
+      - displayName
+      updated_at:
+      - updated_at
+      - updated
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/newscred-cmp-open-api-openapi.json#GET /structured-content/content-types
+    - openapi/_original/newscred-cmp-open-api-openapi.json#GET /structured-content/content-types/{content_type_id}
+    - openapi/_original/newscred-cmp-open-api-openapi.json#POST /structured-content/content-types
+    - openapi/_original/newscred-cmp-open-api-openapi.json#POST /structured-content/content-types/{content_type_id}
+    - openapi/_original/optimizely-content-delivery-openapi.yml#GET /contenttypes
+  entry:
+    path_segment:
+    - items
+    - entries
+    properties:
+      id: id
+      created_at:
+      - created
+      - createdAt
+      updated_at:
+      - modified
+      - updatedAt
+      locale: language
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#DELETE /{clientId}/customblacklists/{customBlacklistId}/entries
+    - openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#DELETE /{clientId}/customblacklists/{customBlacklistId}/entries/{customBlacklistEntryId}
+    - openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#GET /{clientId}/customblacklists/{customBlacklistId}/entries
+    - openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#GET /{clientId}/customblacklists/{customBlacklistId}/entries/{customBlacklistEntryId}
+    - openapi/_original/optimizely-campaign-optimizely-campaign-rest-api-openapi.json#POST /{clientId}/customblacklists/{customBlacklistId}/entries
+  page:
+    path_segment:
+    - pages
+    properties:
+      id: id
+      name: name
+      created_at:
+      - createdOn
+      - created
+      updated_at: last_modified
+      author_id: createdBy
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/optimizely-configured-commerce-admin-api-v1-openapi.json#GET /api/v1/admin/Pages
+    - openapi/_original/optimizely-configured-commerce-admin-api-v1-openapi.json#POST /api/v1/admin/Pages
+    - openapi/_original/optimizely-web-experimentation-openapi.yml#DELETE /pages/{page_id}
+    - openapi/_original/optimizely-web-experimentation-openapi.yml#GET /pages
+    - openapi/_original/optimizely-web-experimentation-openapi.yml#GET /pages/{page_id}
+  post:
+    path_segment:
+    - articles
+    properties:
+      id: id
+      name: title
+      created_at: created_at
+      tags:
+      - labels
+      - tags
+      updated_at: modified_at
+      excerpt: meta_description
+      author_id: owner_id
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/newscred-cmp-open-api-openapi.json#GET /articles/{id}
+    - openapi/_original/newscred-cmp-open-api-openapi.json#GET /tasks/{task_id}/articles/{article_id}
+    - openapi/_original/newscred-welcome-open-api-openapi.yml#GET /articles/{id}
+    - openapi/_original/newscred-welcome-open-api-openapi.yml#GET /tasks/{task_id}/articles/{article_id}
+    - openapi/_original/optimizely-content-marketing-platform-optimizely-cmp-open-api-documentation-openapi.json#GET
+      /articles/{id}
+  asset:
+    path_segment:
+    - assets
+    properties:
+      id: id
+      name:
+      - name
+      - title
+      created_at:
+      - created
+      - created_at
+      updated_at:
+      - updated_at
+      - modified_at
+      mime_type:
+      - content_type
+      - mime_type
+      size: file_size
+      description: description
+      type: type
+      file_name: file_name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/newscred-cmp-open-api-openapi.json#GET /assets
+    - openapi/_original/newscred-cmp-open-api-openapi.json#GET /tasks/{id}/assets
+    - openapi/_original/newscred-cmp-open-api-openapi.json#POST /assets
+    - openapi/_original/newscred-cmp-open-api-openapi.json#POST /tasks/{id}/assets
+    - openapi/_original/newscred-welcome-open-api-openapi.yml#GET /assets

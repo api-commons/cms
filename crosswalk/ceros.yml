@@ -1,0 +1,20 @@
+provider: ceros
+apis_io: https://apis.io/providers/ceros/
+context: cms
+generated: '2026-11-10'
+concepts:
+  page:
+    path_segment:
+    - pages
+    properties:
+      id: pageId
+      name:
+      - label
+      - title
+      slug: slug
+      template: templateId
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/ceros-public-api-2026-02-25-openapi.yml#DELETE /experiences/{experienceResourceId}/pages/{pageId}
+    - openapi/_original/ceros-public-api-2026-02-25-openapi.yml#GET /experiences/{experienceResourceId}/pages
+    - openapi/_original/ceros-public-api-2026-02-25-openapi.yml#POST /experiences/{experienceResourceId}/pages

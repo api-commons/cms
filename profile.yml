@@ -1,0 +1,891 @@
+context: cms
+name: Content Management
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Content Management
+  - Headless CMS
+  - CMS
+  - Content Management System
+  - Web Content Management
+  - Digital Experience Platform
+  providers_with_harvested_openapi: 73
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded:
+  entry:
+    box: /collections/{id}/items are files in a Box collection
+    bigtincan: /search/stories is a search endpoint
+duplicates:
+  atlassian-confluence:
+  - confluence
+  webflow:
+  - webflow-api-and-documentation-webflow
+  optimizely:
+  - newscred
+shared_specs: {}
+concepts:
+  content_type:
+    segments_seen:
+      content-types: 4
+      contenttypes: 2
+      content_types: 1
+    providers_exposing: 6
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET collection
+      providers: 6
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 4
+      share: 0.667
+      tier: core
+    - operation: POST collection
+      providers: 2
+      share: 0.333
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.167
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.167
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.167
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.167
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.167
+      tier: long-tail
+    properties:
+    - name: fields
+      tier: core
+      providers: 5
+      share: 0.833
+      type: array
+      spellings:
+      - fields
+      - schema
+      - properties
+      - field_definitions
+    - name: description
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - description
+    - name: id
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - id
+      - uid
+      - contentTypeId
+    - name: created_at
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - created_at
+      - created
+    - name: name
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - name
+      - title
+      - displayName
+    - name: updated_at
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - updated_at
+      - updated
+    long_tail_count: 35
+    long_tail_sample:
+    - project_id
+    - allow_ref_edit
+    - allowed_content_types
+    - api_id
+    - author_id
+    - base
+    - component
+    - content_type
+    - content_type_guid
+    - content_type_links
+    - content_type_version_guid
+    - core
+    - default_value
+    - details
+    - disabled
+    - entry_name
+    - expected_locales
+    - icon
+    - latest
+    - options
+    - permissions
+    - plugin
+    - preview_configurations
+    - ref_type
+    - slug_settings
+    - source
+    - source_id
+    - source_metadata
+    - thumbnail_field
+    - thumbnail_guid
+    - type
+    - updated_by
+    - use_team_permissions
+    - version_guid
+    - workflow_id
+  entry:
+    segments_seen:
+      entries: 4
+      items: 2
+      stories: 1
+    providers_exposing: 6
+    providers_with_readable_schema: 6
+    operations:
+    - operation: GET collection
+      providers: 6
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 5
+      share: 0.833
+      tier: core
+    - operation: DELETE item
+      providers: 4
+      share: 0.667
+      tier: core
+    - operation: POST collection
+      providers: 4
+      share: 0.667
+      tier: core
+    - operation: UPDATE item
+      providers: 4
+      share: 0.667
+      tier: core
+    - operation: DELETE collection
+      providers: 3
+      share: 0.5
+      tier: core
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.333
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.167
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 6
+      share: 1.0
+      type: string
+      spellings:
+      - id
+      - uid
+      - uuid
+      - entryId
+    - name: created_at
+      tier: core
+      providers: 5
+      share: 0.833
+      type: string
+      spellings:
+      - created_at
+      - created
+      - createdAt
+      - createdOn
+    - name: updated_at
+      tier: core
+      providers: 4
+      share: 0.667
+      type: string
+      spellings:
+      - updated_at
+      - modified
+      - updatedAt
+    - name: locale
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - language
+      - locale
+    - name: name
+      tier: core
+      providers: 3
+      share: 0.5
+      type: string
+      spellings:
+      - name
+      - title
+    long_tail_count: 49
+    long_tail_sample:
+    - content_type_id
+    - metadata
+    - pattern
+    - project_id
+    - published_at
+    - status
+    - version
+    - cms_locale_id
+    - cms_locale_ids
+    - code
+    - cv
+    - default_root
+    - edition_id
+    - edition_name
+    - edition_priority
+    - elements
+    - end_date
+    - entry_type
+    - facets
+    - field_data
+    - fields
+    - group_id
+    - is_active
+    - is_archived
+    - is_demo
+    - is_draft
+    - is_folder
+    - is_startpage
+    - last_published
+    - last_updated
+    - limit
+    - offset
+    - parent_id
+    - phrases
+    - pinned
+    - position
+    - prices
+    - priority
+    - publish
+    - reason
+  page:
+    segments_seen:
+      pages: 14
+      page: 3
+    providers_exposing: 16
+    providers_with_readable_schema: 14
+    operations:
+    - operation: GET collection
+      providers: 16
+      share: 1.0
+      tier: core
+    - operation: GET item
+      providers: 11
+      share: 0.688
+      tier: core
+    - operation: POST collection
+      providers: 10
+      share: 0.625
+      tier: core
+    - operation: DELETE item
+      providers: 8
+      share: 0.5
+      tier: core
+    - operation: UPDATE item
+      providers: 7
+      share: 0.438
+      tier: extended
+    properties:
+    - name: id
+      tier: core
+      providers: 13
+      share: 0.929
+      type: string
+      spellings:
+      - id
+      - uuid
+      - pageId
+      - '@id'
+    - name: name
+      tier: core
+      providers: 13
+      share: 0.929
+      type: string
+      spellings:
+      - title
+      - name
+      - label
+      - displayName
+    - name: created_at
+      tier: core
+      providers: 7
+      share: 0.5
+      type: string
+      spellings:
+      - createdAt
+      - created
+      - createdOn
+      - created_at
+    - name: slug
+      tier: extended
+      providers: 6
+      share: 0.429
+      type: string
+      spellings:
+      - slug
+      - path
+    - name: updated_at
+      tier: extended
+      providers: 6
+      share: 0.429
+      type: string
+      spellings:
+      - updatedAt
+      - lastModified
+      - updated_at
+      - updated
+      - last_modified
+    - name: parent_id
+      tier: extended
+      providers: 5
+      share: 0.357
+      type: string
+      spellings:
+      - parentId
+      - parent
+      - parentPageId
+    - name: author_id
+      tier: extended
+      providers: 4
+      share: 0.286
+      type: string
+      spellings:
+      - createdBy
+      - authorId
+      - ownerId
+      - author
+    - name: body
+      tier: extended
+      providers: 4
+      share: 0.286
+      type: string
+      spellings:
+      - content
+      - html
+      - body
+    - name: description
+      tier: extended
+      providers: 4
+      share: 0.286
+      type: string
+      spellings:
+      - description
+      - excerpt
+    - name: type
+      tier: extended
+      providers: 4
+      share: 0.286
+      type: string
+      spellings:
+      - type
+      - '@type'
+    - name: locale
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - language
+      - locale
+    - name: published_at
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - publishedAt
+      - published_at
+    - name: seo_title
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: object
+      spellings:
+      - seo
+      - meta_title
+    - name: site_id
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - siteId
+    - name: status
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - status
+      - published
+    - name: template
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: string
+      spellings:
+      - templateId
+    long_tail_count: 136
+    long_tail_sample:
+    - archived
+    - authors
+    - canonical_url
+    - children
+    - metadata
+    - position
+    - version
+    - access
+    - activation_code
+    - activation_type
+    - after_page_id
+    - allowed_for_page_type
+    - blog
+    - branch_id
+    - browser_link
+    - can_branch
+    - category
+    - classification
+    - codeinjection_foot
+    - codeinjection_head
+    - collection
+    - collection_id
+    - comment_id
+    - conditions
+    - content_id
+    - content_status
+    - content_type
+    - content_type_id
+    - content_update
+    - context
+    - creator_id
+    - current_page_id
+    - custom_excerpt
+    - custom_template
+    - details
+    - draft
+    - draft_status
+    - edit_url
+    - editor_version
+    - elements
+  post:
+    segments_seen:
+      posts: 6
+      blogposts: 2
+      post: 2
+      article: 1
+      articles: 1
+    providers_exposing: 12
+    providers_with_readable_schema: 11
+    operations:
+    - operation: GET collection
+      providers: 9
+      share: 0.75
+      tier: core
+    - operation: GET item
+      providers: 8
+      share: 0.667
+      tier: core
+    - operation: POST collection
+      providers: 8
+      share: 0.667
+      tier: core
+    - operation: UPDATE item
+      providers: 5
+      share: 0.417
+      tier: extended
+    - operation: DELETE item
+      providers: 4
+      share: 0.333
+      tier: extended
+    - operation: DELETE collection
+      providers: 1
+      share: 0.083
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 9
+      share: 0.818
+      type: string
+      spellings:
+      - id
+      - uuid
+      - '@id'
+      - Id
+    - name: name
+      tier: core
+      providers: 8
+      share: 0.727
+      type: string
+      spellings:
+      - title
+      - name
+      - displayName
+      - Title
+    - name: created_at
+      tier: core
+      providers: 7
+      share: 0.636
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - date
+      - date_created
+    - name: status
+      tier: core
+      providers: 7
+      share: 0.636
+      type: string
+      spellings:
+      - status
+      - published
+      - state
+      - Status
+    - name: body
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - content
+      - body
+      - html
+      - Content
+    - name: tags
+      tier: core
+      providers: 6
+      share: 0.545
+      type: array
+      spellings:
+      - labels
+      - tags
+      - Tags
+    - name: updated_at
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - updated_at
+      - updated
+      - modified_at
+      - updatedAt
+      - LastModified
+    - name: excerpt
+      tier: extended
+      providers: 5
+      share: 0.455
+      type: string
+      spellings:
+      - description
+      - meta_description
+      - excerpt
+      - Summary
+    - name: type
+      tier: extended
+      providers: 5
+      share: 0.455
+      type: string
+      spellings:
+      - type
+      - '@type'
+    - name: author_id
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: string
+      spellings:
+      - authorId
+      - author
+      - owner_id
+      - Author
+    long_tail_count: 98
+    long_tail_sample:
+    - authors
+    - email
+    - featured_image
+    - link
+    - meta_title
+    - metadata
+    - slug
+    - access
+    - account
+    - account_id
+    - account_sets
+    - accounts
+    - auto
+    - blog
+    - canonical_url
+    - categories
+    - codeinjection_foot
+    - codeinjection_head
+    - color
+    - comment_id
+    - content_filter
+    - context
+    - custom_excerpt
+    - custom_template
+    - date_updated
+    - datetime
+    - deleted_ids
+    - email_subject
+    - expires_at
+    - export_id
+    - feature_image_alt
+    - feature_image_caption
+    - featured
+    - fields
+    - fields_labels
+    - fields_names
+    - fields_summary
+    - file_location
+    - folder_id
+    - frontmatter
+  asset:
+    segments_seen:
+      assets: 14
+      media: 5
+      asset: 4
+      uploads: 2
+    providers_exposing: 21
+    providers_with_readable_schema: 19
+    operations:
+    - operation: GET collection
+      providers: 19
+      share: 0.905
+      tier: core
+    - operation: GET item
+      providers: 17
+      share: 0.81
+      tier: core
+    - operation: POST collection
+      providers: 16
+      share: 0.762
+      tier: core
+    - operation: UPDATE item
+      providers: 11
+      share: 0.524
+      tier: core
+    - operation: DELETE item
+      providers: 10
+      share: 0.476
+      tier: extended
+    - operation: DELETE collection
+      providers: 3
+      share: 0.143
+      tier: long-tail
+    - operation: POST item
+      providers: 2
+      share: 0.095
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.095
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 18
+      share: 0.947
+      type: string
+      spellings:
+      - id
+      - assetId
+      - uid
+    - name: name
+      tier: core
+      providers: 15
+      share: 0.789
+      type: string
+      spellings:
+      - name
+      - title
+      - displayName
+    - name: created_at
+      tier: core
+      providers: 12
+      share: 0.632
+      type: string
+      spellings:
+      - created_at
+      - created
+      - createdDate
+      - dateCreated
+      - createdAt
+      - createdOn
+    - name: updated_at
+      tier: core
+      providers: 10
+      share: 0.526
+      type: string
+      spellings:
+      - updated_at
+      - lastModified
+      - dateModified
+      - modified
+      - modified_at
+      - modifiedDate
+      - updatedAt
+      - modifiedAt
+    - name: mime_type
+      tier: extended
+      providers: 9
+      share: 0.474
+      type: string
+      spellings:
+      - mimeType
+      - content_type
+      - fileType
+      - mime_type
+      - format
+      - contentType
+    - name: size
+      tier: extended
+      providers: 9
+      share: 0.474
+      type: integer
+      spellings:
+      - fileSize
+      - size
+      - file_size
+    - name: description
+      tier: extended
+      providers: 8
+      share: 0.421
+      type: string
+      spellings:
+      - description
+      - summary
+    - name: type
+      tier: extended
+      providers: 7
+      share: 0.368
+      type: string
+      spellings:
+      - type
+    - name: alt_text
+      tier: extended
+      providers: 6
+      share: 0.316
+      type: string
+      spellings:
+      - altText
+      - caption
+      - alt
+    - name: status
+      tier: extended
+      providers: 6
+      share: 0.316
+      type: string
+      spellings:
+      - status
+      - state
+    - name: tags
+      tier: extended
+      providers: 6
+      share: 0.316
+      type: array
+      spellings:
+      - tags
+    - name: file_name
+      tier: extended
+      providers: 5
+      share: 0.263
+      type: string
+      spellings:
+      - fileName
+      - file_name
+    - name: asset_type
+      tier: extended
+      providers: 4
+      share: 0.211
+      type: string
+      spellings:
+      - assetType
+    - name: filename
+      tier: extended
+      providers: 4
+      share: 0.211
+      type: string
+      spellings:
+      - filename
+    - name: slug
+      tier: extended
+      providers: 4
+      share: 0.211
+      type: string
+      spellings:
+      - path
+      - handle
+      - slug
+    long_tail_count: 224
+    long_tail_sample:
+    - author_id
+    - copyright
+    - external_id
+    - folder_id
+    - is_archived
+    - media_type
+    - url
+    - categories
+    - checksum
+    - content
+    - duration
+    - file_extension
+    - height
+    - keywords
+    - metadata
+    - pagination
+    - permissions
+    - thumbnail_url
+    - version
+    - views
+    - width
+    - account_id
+    - active_original_focus_point
+    - administrator_id
+    - archive
+    - asset_audit
+    - asset_details_external_url
+    - asset_folder_id
+    - asset_ids
+    - asset_name
+    - asset_state
+    - asset_url
+    - audit
+    - authors
+    - automatic_tags
+    - brand_id
+    - bundle_id
+    - bundle_name
+    - capabilities
+    - cascade

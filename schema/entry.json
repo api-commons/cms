@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/cms/main/schema/entry.json",
+  "title": "Entry",
+  "description": "The common entry in Content Management, distilled from 6 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "id",
+        "uid",
+        "uuid",
+        "entryId"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.833,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "created_at",
+        "created",
+        "createdAt",
+        "createdOn"
+      ],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "updated_at",
+        "modified",
+        "updatedAt"
+      ],
+      "format": "date-time"
+    },
+    "locale": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "language",
+        "locale"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "name",
+        "title"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "cms",
+    "concept": "entry",
+    "providers": 6,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}
