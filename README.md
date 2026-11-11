@@ -18,7 +18,7 @@ generated. Every number below is a count of providers.
 | post | 12 | 11 | id 82%, name 73%, created_at 64%, status 64%, body 55%, tags 55%, updated_at 55% | posts 6, blogposts 2, post 2, article 1 |
 | asset | 21 | 19 | id 95%, name 84%, created_at 74%, updated_at 63% | assets 14, media 5, asset 4, uploads 2 |
 
-Cohort: 73 providers with harvested OpenAPI, 36 crosswalks. Of the providers exposing a content_type: 33% create, 100% list, 67% fetch, 17% update, 17% delete. Generated 2026-11-10 by build.py.
+Cohort: 73 providers with harvested OpenAPI, 36 crosswalks. Of the providers exposing a content_type: 33% create, 100% list, 67% fetch, 17% update, 17% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
@@ -26,7 +26,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 
 ## What the measurement shows
 
-- A post agrees on id, title, status, body, tags and dates: WordPress set the shape of a blog post and the rest of the market kept it.
+- A post agrees on id, title, status, body, tags and dates -- the blog post has one shape across every CMS that exposes one.
 - An asset agrees only on id, name and dates; MIME type falls just short. A CMS asset is a file, but CMSs describe the bytes less consistently than storage APIs do.
 - Headless CMS is barely represented (6 providers each for content types and entries): the leading headless platforms either publish GraphQL or no OpenAPI the catalog holds.
 

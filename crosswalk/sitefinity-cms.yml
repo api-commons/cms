@@ -1,7 +1,7 @@
 provider: sitefinity-cms
 apis_io: https://apis.io/providers/sitefinity-cms/
 context: cms
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   post:
     path_segment:

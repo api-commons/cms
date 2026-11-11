@@ -1,7 +1,7 @@
 provider: strapi
 apis_io: https://apis.io/providers/strapi/
 context: cms
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   content_type:
     path_segment:

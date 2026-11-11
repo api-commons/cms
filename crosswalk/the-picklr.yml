@@ -1,7 +1,7 @@
 provider: the-picklr
 apis_io: https://apis.io/providers/the-picklr/
 context: cms
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   page:
     path_segment:

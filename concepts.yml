@@ -71,8 +71,8 @@ duplicates:
   optimizely: [newscred]
 
 findings:
-  - "A post agrees on id, title, status, body, tags and dates: WordPress set the shape of a blog
-    post and the rest of the market kept it."
+  - "A post agrees on id, title, status, body, tags and dates -- the blog post has one shape
+    across every CMS that exposes one."
   - "An asset agrees only on id, name and dates; MIME type falls just short. A CMS asset is a
     file, but CMSs describe the bytes less consistently than storage APIs do."
   - "Headless CMS is barely represented (6 providers each for content types and entries):
